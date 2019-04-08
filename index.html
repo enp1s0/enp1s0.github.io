@@ -2,19 +2,62 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="/css/default.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ajusa/lit@latest/dist/lit.css" />
+	<link rel="stylesheet" href="./css/default.css">
 	<title></title>
 </head>
 <body>
-	<div class='row'>
-		<div class='col-xs-12 col-xs-sm-12 col-md-2  col-lg-2 ' id='picture'>
+	<div id='contents'>
+		<div class='row' id='header'>
+			<div class='10 col'>
+				<h1>大友 広幸 / Ootomo Hiroyuki</h1>
+				東京工業大学情報理工学院情報工学系 横田理央研究室 修士2年
+			</div>
+			<div class='2 col'>
+				<img src='http://momo86.net/ootomo.jpg' id='profile-image'>
+			</div>
 		</div>
-		<div class='col-xs-12 col-xs-sm-12 col-md-10 col-lg-10' id='contents'>
+		<hr>
+		<div class='row'>
+			<div class='6 col'>
+				<h3>研究内容</h3>
+				<ul>
+					<li>高性能計算(HPC)</li>
+					<li>低精度演算</li>
+					<li>大規模計算</li>
+				</ul>
+			</div>
+			<div class='6 col'>
+				<h3>Skills</h3>
+				<ul>
+					<li>vimが好き</li>
+					<li>C,C++ / CUDA (/PTX) / MPI / OpenMP</li>
+					<li>Linux (サーバ管理/運用)</li>
+					<li>ピザ窯ちょっと作れる</li>
+				</ul>
+			</div>
 		</div>
+		<h3>Work experience</h3>
+		<ul>
+			<li>2018.07 - 現在<br>
+				フィックスターズ アルバイト
+			</li>
+			<li>2018.05 - 2018.06<br>
+				フィックスターズ インターンシップ<br>
+				成果 : <a href='http://proc-cpuinfo.fixstars.com/2018/10/tensorcore/'>Tensorコアを使ってみた</a></li>
+		</ul>
+		<h3>Publications</h3>
+		<ul>
+			<li>大友広幸,横田理央 "Tensorコアを用いたBatced QR分解" 情報処理学会第81回全国大会 2019</li>
+			<li>大友広幸,大沢和樹,横田理央 "フィッシャー情報行列のクロネッカー因子分解を用いた深層学習" 情報処理学会第80回全国大会 2018</li>
+			<li>大友広幸,大沢和樹,横田理央 "フィッシャー情報行列のクロネッカー因子分解を用いた深層ニューラルネットワークの分散学習"第163回ハイパフォーマンスコンピューティング研究会 2018</li>
+		</ul>
+		<h3>Links</h3>
+		<ul>
+			<li><a href='https://github.com/enp1s0'>GitHub</a></li>
+			<li><a href='https://gitlab.momo86.net/mutsuki'>GitLab</a></li>
+			<li><a href='https://x.momo86.net'>ブログ</a></li>
+		</ul>
 	</div>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>
