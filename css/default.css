@@ -2,11 +2,6 @@
 hr{
 	background-color:#11103B;
 	border: solid #11103B;
-	margin-bottom:10px;
-}
-
-li{
-	margin-left:2em;
 }
 
 #contents{
@@ -21,5 +16,4 @@ li{
 	width:100%;
 }
 #header{
-	max-height: 50px;
 }
