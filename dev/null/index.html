@@ -21,7 +21,63 @@
       </div>
       <div class='row'>
       <hr>
+      <table class='w-100'>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Tag</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id='table-body'>
+        </tbody>
+      </table>
       </div>
     </div>
   </body>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+function locale_date(d){
+	date = new Date(d * 1000);
+    return [date.getFullYear(), date.getMonth() + 1, date.getDate()].join( '/' ) + ' ' + date.toLocaleTimeString();
+}
+function locale_day(d){
+	date = new Date(d * 1000);
+    return [date.getFullYear(), date.getMonth() + 1, date.getDate()].join( '/' );
+}
+function get_tweet(start_time, end_time) {
+	$.ajax({
+		type: "POST",
+		url: "https://x.momo86.net/action/devnull.json",
+		data: {
+		'start_time': start_time,
+			'end_time': end_time,
+		},
+		success: function(res){
+			var html = '';
+			var last_day = 'poi';
+			res['data'].reverse().forEach(function(d) {
+				var day = locale_day(parseInt(d['created_at']));
+				if(day != last_day){
+					last_day = day;
+					html += '<tr>';
+					html += '<td></td>';
+					html += '<td></td>';
+					html += '<td></td>';
+					html += '</tr>';
+				}
+				html += '<tr>';
+				html += '<td>' + locale_date(parseInt(d['created_at'])) + '</td>';
+				html += '<td>' + d['tag'] + '</td>';
+				html += '<td>' + d['tweet'] + '</td>';
+				html += '</tr>';
+			});
+			console.log(html);
+			$('#table-body').html(html);
+		}
+	});
+
+}
+get_tweet(Math.floor(Date.now() / 1000) - 30 * 24 * 60 * 60, Math.floor(Date.now() / 1000) + 10);
+</script>
 </html>
