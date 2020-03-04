@@ -93,6 +93,55 @@
           </ul>
         </div>
       </div>
+      <h3>Research</h3>
+      <div class='card'>
+        <h4>Numerical calculation using NVIDIA TensorCores</h4>
+        <img src='/images/tensorcore.svg' style='width:80%;min-width:600px;margin:auto;'>
+        <div class='text-box'>
+          Tensorコアは混合精度行列積和演算回路です．
+          Tensorコアへの入力行列は半精度である必要があり，これが行列積の精度を劣化させます．
+          この劣化はTensorコアの特長を活かした精度補正計算を行うことで緩和でき，これについての研究を行っています<a href='https://www.momo86.net/sc19-tsqr-on-tc-poster.pdf'>[SC'19 poster]</a>．
+        </div>
+        <div class='text-box'>
+          TensorCores are specialized hardware for matrix multiplication and addition and are available on the latest NVIDIA GPUs.
+          Converting input matrices to half precision on TensorCores results loss of accuracy.
+          We recover the accuracy by using an accuracy correction technique which leverages the single precision multiplication and addition of TensorCores<a href='https://www.momo86.net/sc19-tsqr-on-tc-poster.pdf'>[SC'19 poster]</a>.
+        </div>
+      </div>
+      <h3>Projects</h3>
+      <div class='row'>
+        <div class='7 col'>
+          <div class='card'>
+            <h4>High performance ATSUKAN Computing</h4>
+            <img src='/images/atsukan.jpg' style='width: 100%;'>
+            <div class='text-box'>
+              I'm building a GPU cluster to make hot sake (atsukan;熱燗).
+              Each node has two NVIDIA Tesla K20 GPUs and liquid cooling modules.
+              Gathered heat through cooling water is used to heat up sake.
+              <a href='https://x.momo86.net/?p=108'>Blog (Japanese)</a>
+            </div>
+          </div>
+        </div>
+        <div class='5 col'>
+          <div class='card'>
+            <h4>Pizza oven</h4>
+            <img src='/images/pizza.jpg' style='width: 100%;'>
+            <div class='text-box'>
+              I'm building a pizza oven in my parents house.
+
+              <a href='https://x.momo86.net/?p=63'>Blog (Japanese)</a>
+            </div>
+          </div>
+          <div class='card'>
+            <h4>Computer parts accessories</h4>
+            <img src='/images/accessory.jpg' style='width: 100%;'>
+            <div class='text-box'>
+              I'm making accessories from old/broken computer parts.
+              <a href='https://atelier.momo86.net'>Web page (Japanese)</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <h3>Publications</h3>
       <ul>
         <li>吉藤尚生,<b>大友広幸</b> "粒子法FLOSSに対する妥当性確認試験" 第33回数値流体力学シンポジウム 2019</li>
