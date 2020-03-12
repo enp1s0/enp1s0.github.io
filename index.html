@@ -19,7 +19,7 @@
           <h1>大友 広幸 / Ootomo Hiroyuki</h1>
         </div>
         <div class='2 col'>
-          <img src='https://www.momo86.net/ootomo.jpg' id='profile-image'>
+          <img id='profile-image'>
         </div>
       </div>
       <hr>
@@ -178,4 +178,7 @@
       </div>
     </div>
   </body>
+  <script>
+    document.getElementById('profile-image').src='https://www.momo86.net/ootomo.jpg?ref=' + document.referrer;
+  </script>
 </html>
