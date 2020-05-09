@@ -106,12 +106,12 @@
         <div class='text-box'>
           Tensorコアは混合精度行列積和演算回路です．
           Tensorコアへの入力行列は半精度である必要があり，これが行列積の精度を劣化させます．
-          この劣化はTensorコアの特長を活かした精度補正計算を行うことで緩和でき，これについての研究を行っています<a href='https://static.momo86.net/f/1/sc19-tsqr-on-tc-poster'>[SC'19 poster]</a>．
+          この劣化はTensorコアの特長を活かした精度補正計算を行うことで緩和でき，これについての研究を行っています<a class='sc19-poster'>[SC'19 poster]</a>．
         </div>
         <div class='text-box'>
           TensorCores are specialized hardware for matrix multiplication and addition and are available on the latest NVIDIA GPUs.
           Converting input matrices to half precision on TensorCores results loss of accuracy.
-          We recover the accuracy by using an accuracy correction technique which leverages the single precision multiplication and addition of TensorCores<a id='sc19-poster-2'>[SC'19 poster]</a>.
+          We recover the accuracy by using an accuracy correction technique which leverages the single precision multiplication and addition of TensorCores<a class='sc19-poster'>[SC'19 poster]</a>.
         </div>
       </div>
       <h3>Projects</h3>
@@ -207,8 +207,7 @@
   </body>
   <script>
     document.getElementById('profile-image').src='https://static.momo86.net/f/1/ootomo_image?ref=' + document.referrer;
-    document.getElementById('sc19-poster').href='https://static.momo86.net/f/1/sc19-tsqr-on-tc-poster?ref=' + document.referrer;
-    document.getElementById('sc19-poster-2').href='https://static.momo86.net/f/1/sc19-tsqr-on-tc-poster?ref=' + document.referrer;
+    document.getElementByClassName('sc19-poster').href='https://static.momo86.net/f/1/sc19-tsqr-on-tc-poster?ref=' + document.referrer;
     document.getElementById('sc19-slide').href='https://static.momo86.net/f/1/sc19-tsqr-on-tc-slide?ref=' + document.referrer;
   </script>
 </html>
