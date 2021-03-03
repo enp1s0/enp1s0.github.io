@@ -145,12 +145,12 @@
         <div class='text-box'>
           Tensorコアは混合精度行列積和演算回路です．
           Tensorコアへの入力行列は半精度である必要があり，これが行列積の精度を劣化させます．
-          この劣化はTensorコアの特長を活かした精度補正計算を行うことで緩和でき，これについての研究を行っています<a id='sc19-poster'>[SC'19 poster]</a>．
+          この劣化はTensorコアの特長を活かした精度補正計算を行うことで緩和でき，これについての研究を行っています<a id='cse21-slide'>[SIAM CSE'21]</a>．
         </div>
         <div class='text-box'>
           TensorCores are specialized hardware for matrix multiplication and addition and are available on the latest NVIDIA GPUs.
           Converting input matrices to half precision on TensorCores results loss of accuracy.
-          We recover the accuracy by using an accuracy correction technique which leverages the single precision multiplication and addition of TensorCores<a id='sc19-poster'>[SC'19 poster]</a>.
+          We recover the accuracy by using an accuracy correction technique which leverages the single precision multiplication and addition of TensorCores<a id='cse21-slide'>[SIAM CSE'21]</a>.
         </div>
       </div>
       <h3>Projects</h3>
@@ -239,6 +239,10 @@
         <li><b>大友広幸</b>,大沢和樹,横田理央 "フィッシャー情報行列のクロネッカー因子分解を用いた深層学習" 情報処理学会第80回全国大会 2018</li>
         <li><b>大友広幸</b>,大沢和樹,横田理央 "フィッシャー情報行列のクロネッカー因子分解を用いた深層ニューラルネットワークの分散学習"第163回ハイパフォーマンスコンピューティング研究会 2018</li>
       </ul>
+      <h3>Presentation</h3>
+      <ul>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "TSQR on TensorCores with error correction", SIAM CSE'21[<a id='cse21-slide'>slide</a>]</li>
+      </ul>
       <h3>Awards</h3>
       <ul>
         <li>第3回 HAKKO熱の実験コンテスト 銀賞 「計算パーツの熱に関する実験」 2020 - <a href='https://x.momo86.net/?p=108'>ブログ</a></li>
@@ -293,6 +297,7 @@
     document.getElementById('profile-image').src='https://static.momo86.net/f/1/ootomo_image?ref=' + document.referrer;
     document.getElementsByClassName('sc19-poster').href='https://static.momo86.net/f/1/sc19-tsqr-on-tc-poster?ref=' + document.referrer;
     document.getElementById('sc19-slide').href='https://static.momo86.net/f/1/sc19-tsqr-on-tc-slide?ref=' + document.referrer;
+    document.getElementById('cse21-slide').href='https://static.momo86.net/f/1/cse21-slide?ref=' + document.referrer;
     document.getElementById('vimvimvim-0').href='https://static.momo86.net/f/1/vimvimvim_2019?ref=' + document.referrer;
   </script>
 </html>
