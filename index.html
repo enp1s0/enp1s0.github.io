@@ -15,39 +15,59 @@
   color:#ccc;
   border: solid;
 }
+.text-right {
+  text-align: right;
+}
+.en {
+  display:none;
+}
     </style>
   </head>
   <body>
     <div id='contents'>
       <div class='row' id='header'>
         <div class='10 col'>
-          <h1>大友 広幸 / Ootomo, Hiroyuki</h1>
+          <h1><span class='ja'>大友 広幸</span><span class='en'>Ootomo, Hiroyuki</span></h1>
         </div>
         <div class='2 col'>
           <img id='profile-image'>
         </div>
       </div>
       <hr>
+      <div class='text-right'>
+        <div class='ja'>
+          <button class="btn primary" onclick="to_ja()">日本語</button>
+          <button class="btn" onclick="to_en()">English</button>
+        </div>
+        <div class='en'>
+          <button class="btn" onclick="to_ja()">日本語</button>
+          <button class="btn primary" onclick="to_en()">English</button>
+        </div>
+      </div>
       <div class='row'>
-        <h3>所属 / Affiliation</h3>
+        <h3><span class='ja'>所属</span><span class='en'>Affiliation</span></h3>
         
         <ul>
-          <li>東京工業大学情報理工学院情報工学系 横田理央研究室 博士課程2年<br>
-            Rio Yokota Lab / School of computing, TokyoTech</li>
           <li>
-            日本学術振興会特別研究員（DC2/高性能計算）</li>
+            <span class='ja'>東京工業大学情報理工学院情報工学系 横田理央研究室 博士課程2年</span>
+            <span class='en'>Ph.D student at Rio Yokota Lab / School of computing, TokyoTech</span>
+          </li>
+          <li>
+            <span class='ja'>日本学術振興会特別研究員（DC2/高性能計算）</span>
+            <span class='en'>JSPS Research Fellowships for Young Scientists (DC2/High performance computing)</span>
+          </li>
       </div>
       <div class='row'>
         <div class='6 col'>
           <h3>Research</h3>
           <ul>
-            <li>高性能計算 (High performance computing)
+            <li><span class='ja'>高性能計算</span><span class='en'>High performance computing</span>
               <ul>
-                <li>低精度/混同精度演算 (Mixed precision computing)</li>
-                <li>大規模計算 (Large scale computing)</li>
+                <li><span class='ja'>低精度/混同精度演算</span><span class='en'>Mixed precision computing</span></li>
+                <li><span class='ja'>大規模計算</span><span class='en'>Large scale computing</span></li>
               </ul>
             </li>
-            <li>量子計算機シミュレーション (Quantum computer simulation)</li>
+            <li><span class='ja'>量子計算機シミュレーション</span><span class='en'>Quantum computer simulation</span></li>
           </ul>
         </div>
         <div class='6 col'>
@@ -56,15 +76,20 @@
             <li>ArchLinux / Xmonad / Vim</li>
             <li>C,C++ / CUDA (/PTX) / MPI / OpenMP</li>
             <li>Objective-C</li>
-            <li>Linux (サーバ管理/運用)<br>
-              <u>活動内容</u>
+            <li>Linux (<span class='ja'>サーバ管理/運用</span><span class='en'>Server management</span>)<br>
+              <u><span class='ja'>活動内容</span><span class='en'>Blog</span></u>
               <ul>
-                <li><a href='https://rioyokotalab.github.io/Lab-Servers-2020/'>2020年度のひなどりクラスタ - Rio Yokota Lab Blog</a></li>
+                <li><a href='https://rioyokotalab.github.io/Lab-Servers-2020/'><span class='ja'>2020年度のひなどりクラスタ</span><span class='en'>Computing cluster in our lab</span> - Rio Yokota Lab Blog</a> (Japanese)</li>
               </ul>
             </li>
-            <li>ピザ窯ちょっと作れる (Building pizza oven)</li>
-            <li>土器ちょっと焼ける (Baking Jomon pottery)</li>
-            <li>廃PC部品でアクセサリを作ったり <a href='https://atelier.momo86.net'>matelier</a> / <a href='https://x.enp1s0.dev/'>灰と余暇</a> (Creating accessories from used/broken computer parts)</li>
+            <li><span class='ja'>ピザ窯ちょっと作れる</span><span class='en'>Building pizza oven</span></li>
+            <li><span class='ja'>土器ちょっと焼ける</span><span class='en'>Baking Jomon pottery</span></li>
+            <li><span class='ja'>廃PC部品でアクセサリを作ったり</span><span class='en'>Creating accessories from used/broken computer parts</span></li>
+              <u><span class='ja'>活動内容</span><span class='en'>Web page</span></u>
+              <ul>
+                <li><a href='https://atelier.momo86.net'>matelier</a> (Japanese)</li>
+                <li><a href='https://x.enp1s0.dev/'><span class='ja'>灰と余暇</span><span class='en'>Hai to Yoka</span></a> (Japanese)</li>
+              </ul>
           </ul>
         </div>
       </div>
@@ -73,33 +98,37 @@
         <div class='7 col'>
           <ul>
             <li>2021.03 - Present<br>
-              Fixstars (part-time job)<br>
+              <span class='ja'>Fixstars Corporation (アルバイト)</span><span class='en'>Fixstars Corporation (part-time job)</span>
             </li>
           </ul>
           <hr class='lite-hr'>
           <ul>
             <li>2020.12 - 2021.01<br>
-              Riken R-CCS Internship program (Particle Simulator Research Team)
+              <span class='ja'>理化学研究所 計算科学研究センター 粒子法シミュレーションチーム 実習生</span><span class='en'>Riken R-CCS Internship program (Particle Simulator Research Team)</span>
             </li>
             <li>2020.08 - 2020.10<br>
-              Future Corporation (part-time job)
+              <span class='ja'>Future Corporation (アルバイト)</span><span class='en'>Future Corporation (part-time job)</span>
+              
             </li>
             <li>2019.08 - 2019.09<br>
-              Preferred Networks Internship program (Chip/MN-Core team)
+              <span class='ja'>Preferred Networks インターンシップ(Chip/MN-Coreチーム)</span><span class='en'>Preferred Networks Internship program (Chip/MN-Core team)</span>
+              
             </li>
             <li>2018.07 - 2020.06<br>
-              Fixstars (part-time job)<br>
-              <u>発表</u>
+              <span class='ja'>Fixstars Corporation (アルバイト)</span><span class='en'>Fixstars Corporation (part-time job)</span>
+              <br>
+              <u><span class='ja'>発表</span><span class='en'>Presentation</span></u>
               <ul>
-                <li><a href='https://proc-cpuinfo.fixstars.com/2020/06/openacc-vs-openmp-gpu-offloading/'>OpenACC vs OpenMP GPU Offloading (環境構築編)</a></li>
-                <li><a href='https://proc-cpuinfo.fixstars.com/2019/06/dualsphysics/'>DualSPHysicsで静水圧問題</a></li>
+                <li><a href='https://proc-cpuinfo.fixstars.com/2020/06/openacc-vs-openmp-gpu-offloading/'>OpenACC vs OpenMP GPU Offloading (<span class='ja'>環境構築編</span><span class='en'>Setup environment</span>) - Fixstars tech blog</a> (Japanese)</li>
+                <li><a href='https://proc-cpuinfo.fixstars.com/2019/06/dualsphysics/'><span class='ja'>DualSPHysicsで静水圧問題</span><span class='en'>Hydrostatic pressure problem on DualSPHysics</span> - Fixstars tech blog</a> (Japanese)</li>
               </ul>
             </li>
             <li>2018.05 - 2018.06<br>
-              Fixstars Internship program<br>
-              <u>発表</u>
+              <span class='ja'>Fixstars Corporation (インターンシップ)</span><span class='en'>Fixstars Corporation (Internship program)</span>
+              <br>
+              <u><span class='ja'>発表</span><span class='en'>Presentation</span></u>
               <ul>
-                <li><a href='http://proc-cpuinfo.fixstars.com/2018/10/tensorcore/'>Tensorコアを使ってみた</a></li></li>
+                <li><a href='http://proc-cpuinfo.fixstars.com/2018/10/tensorcore/'><span class='ja'>Tensorコアを使ってみた</span><span class='en'>Exercise for Tensor Cores</span> - Fixstars tech blog</a> (Japanese)</li>
               </ul>
             </li>
           </ul>
@@ -111,15 +140,23 @@
       </div>
       <div class='row'>
         <div class='6 col'>
-          <h4>TA/RA・メンター</h4>
-          <ul>
+          <h4>TA/RA/Mentor</h4>
+          <ul class='ja'>
             <li>2019.04 - Present<br>
-              情報理工学院 数理・計算科学系 森研究室 RA</li>
+              情報理工学院 数理・計算科学系 <a href='https://q.c.titech.ac.jp/'>森研究室</a> RA
+              </li>
             <li>2017.04 - Present<br>
-              横田理央研究室 RA</li>
+              横田理央研究室 RA
+          </ul>
+          <ul class='en'>
+            <li>2019.04 - Present<br>
+              Research assistant at <a href='https://q.c.titech.ac.jp/'>Mori Lab</a>, School of computing, TokyoTech
+              </li>
+            <li>2017.04 - Present<br>
+              Research assistant at Yokota Lab, School of computing, TokyoTech
           </ul>
           <hr class='lite-hr'>
-          <ul>
+          <ul class='ja'>
             <li>2021.06<br>
               <a href='https://www.cc.u-tokyo.ac.jp/events/lectures/158/'>第158回お試しアカウント付き並列プログラミング講習会「第3回 GPUミニキャンプ～HPC編～」</a> メンター<br>	（東京大学情報基盤センター、エヌビディア合同会社、PCクラスタコンソーシアム（実用アプリケーション部会））</li>
             <li>2021.06<br>
@@ -141,28 +178,54 @@
             <li>2020.06<br>
               <a href='http://gpu-computing.gsic.titech.ac.jp/node/102'>第1回GPUオンライン ミニキャンプ</a> メンター<br>	（東京工業大学 学術国際情報センター GPUコンピューティング研究会, エヌビディア合同会社 共催）</li>
             <li>2018.08<br>
-              スーパーコン本戦2018 チューター</li>
+              <a href='https://www.titech.ac.jp/news/2018/042550'>スーパーコン本戦2018</a> チューター</li>
             <li>2017.08<br>
-              スーパーコン本戦2017 チューター</li>
+              <a href='https://www.titech.ac.jp/news/2017/039795'>スーパーコン本戦2017</a> チューター</li>
+          </ul>
+          <ul class='en'>
+            <li>2021.06<br>
+              <a href='https://www.cc.u-tokyo.ac.jp/events/lectures/158/'>GPU mini-camp for HPC at The University of Tokyo</a> Mentor<br>	(Information Technology Center of The University of Tokyo, NVIDIA Japan, PC Cluster Consortium)</li>
+            <li>2021.06<br>
+              <a href='https://www.cc.u-tokyo.ac.jp/events/lectures/159/'>GPU mini-camp for DL at The University of Tokyo</a> Mentor<br> (Information Technology Center of The University of Tokyo, NVIDIA Japan, PC Cluster Consortium)</li>
+            <li>2021.05<br>
+              <a href='https://abci.ai/event/2021/05/12/ja_minicamp.html'>ABCI GPU mini-camp</a> Mentor<br>	(ABCIUG, NVIDIA Japan)</li>
+            <li>2021.01 - 2021.03<br>
+              Technical staff at National Institute of Advanced Industrial Science and Technology (AIST)</li>
+            <li>2020.11<br>
+              <a href='http://www.icts.nagoya-u.ac.jp/ja/sc/news/event/2020-11-05-gpu.html'>GPU mini-camp at Nagoya University</a> Mentor<br>	(The Information Technology Center of Nagoya University, NVIDIA Japan)</li>
+            <li>2020.10<br>
+              <a href='https://abci.ai/event/2020/10/14/ja_minicamp.html'>ABCI GPU mini-camp</a> Mentor<br>	(ABCIUG, NVIDIA Japan)</li>
+            <li>2020.09<br>
+              <a href='https://www.cc.kyushu-u.ac.jp/scp/users/news/2020/490.html'>GPU mini-camp at Kyushu University</a> Mentor<br> (Research Institute for Information Technology of Kyushu University, NVIDIA Japan)</li>
+            <li>2020.09<br>
+              <a href='https://www.ccs.tsukuba.ac.jp/gpu-online20200909/'>GPU mini-camp at The University of Tsukuba</a> Mentor<br>	(Center for Computational Sciences of the University of Tsukuba, NVIDIA Japan)</li>
+            <li>2020.08<br>
+              <a href='https://www.cc.u-tokyo.ac.jp/events/lectures/137/'>GPU mini-camp at The University of Tokyo</a> Mentor<br> (Information Technology Center of The University of Tokyo, NVIDIA Japan, PC Cluster Consortium)</li>
+            <li>2020.06<br>
+              <a href='http://gpu-computing.gsic.titech.ac.jp/node/102'>GPU mini-camp at TokyoTech</a> Mentor<br>	(Global Scientific Information and Computing Center of TokyoTech, NVIDIA Japan)</li>
+            <li>2018.08<br>
+              <a href='https://www.titech.ac.jp/english/news/2018/042561'>SuperCon2018</a> Tutor</li>
+            <li>2017.08<br>
+              <a href='https://www.titech.ac.jp/english/news/2017/039794'>SuperCon2017</a> Tutor</li>
           </ul>
         </div>
         <div class='6 col'>
           <h3>Educational background</h3>
           <ul>
             <li>2020.04 - Present<br>
-              東京工業大学情報理工学院情報工学系（博士課程） / School of computing, TokyoTech (Ph.D Student)
+              <span class='ja'>東京工業大学情報理工学院情報工学系（博士課程）</span><span class='en'>School of computing, TokyoTech (Ph.D Student)</span>
             </li>
           </ul>
           <hr class='lite-hr'>
           <ul>
             <li>2018.04 - 2020.03<br>
-              東京工業大学情報理工学院情報工学系（修士課程） / School of computing, TokyoTech (Master)
+              <span class='ja'>東京工業大学情報理工学院情報工学系（修士課程）</span><span class='en'>School of computing, TokyoTech (Master)</span>
             </li>
             <li>2014.04 - 2018.03<br>
-              東京工業大学工学部情報工学科 / School of computing, TokyoTech
+              <span class='ja'>東京工業大学工学部情報工学科（学部）</span><span class='en'>School of computing, TokyoTech (Master)</span>
             </li>
             <li>2010.04 - 2013.03<br>
-              埼玉県立川越高等学校 / Kawagoe high school
+              <span class='ja'>埼玉県立川越高等学校</span><span class='en'>Kawagoe high school, Saitama prefecture</span>
             </li>
           </ul>
         </div>
@@ -171,12 +234,12 @@
       <div class='card'>
         <h4>Numerical calculation using NVIDIA TensorCores</h4>
         <img src='/images/tensorcore.svg' style='width:90%;margin:auto;'>
-        <div class='text-box'>
+        <div class='text-box ja'>
           Tensorコアは混合精度行列積和演算回路です．
           Tensorコアへの入力行列は半精度である必要があり，これが行列積の精度を劣化させます．
           この劣化はTensorコアの特長を活かした精度補正計算を行うことで緩和でき，これについての研究を行っています<a id='cse21-slide'>[SIAM CSE'21]</a>．
         </div>
-        <div class='text-box'>
+        <div class='text-box en'>
           TensorCores are specialized hardware for matrix multiplication and addition and are available on the latest NVIDIA GPUs.
           Converting input matrices to half precision on TensorCores results loss of accuracy.
           We recover the accuracy by using an accuracy correction technique which leverages the single precision multiplication and addition of TensorCores<a id='cse21-slide'>[SIAM CSE'21]</a>.
@@ -188,84 +251,120 @@
           <div class='card'>
             <h4>High performance ATSUKAN Computing</h4>
             <img src='/images/atsukan.jpg' style='width: 100%;'>
-            <div class='text-box'>
+            <div class='text-box en'>
               I built a GPU cluster to make hot sake (atsukan;熱燗).
               Each node has two NVIDIA Tesla K20 GPUs and liquid cooling modules.
               Gathered heat through cooling water is used to heat up sake.<br>
+              <a href='https://x.momo86.net/?p=108'>Blog (Japanese)</a>
+            </div>
+            <div class='text-box ja'>
+              8枚のNVIDIA K20xの排熱を利用して熱燗を作るための計算機クラスタを作成しました。
               <a href='https://x.momo86.net/?p=108'>Blog (Japanese)</a>
             </div>
           </div>
           <div class='card'>
             <h4>Iceberg wallpaper generator</h4>
             <img src='/images/iceberg-wallpaper.png' style='width: 100%;'>
-            <div class='text-box'>
+            <div class='text-box en'>
               A web service which generates <a href='https://github.com/cocopon/iceberg.vim'>iceberg</a>-style wallpaper.<br>
+              <a href='https://iceberg-gen.momo86.net/'>iceberg-gen</a>
+            </div>
+            <div class='text-box ja'>
+              <a href='https://github.com/cocopon/iceberg.vim'>iceberg</a>っぽい画像を作成するWebサイト。<br>
               <a href='https://iceberg-gen.momo86.net/'>iceberg-gen</a>
             </div>
           </div>
           <div class='card'>
             <h4>WMMA API extension</h4>
             <img src='/images/wmmae.png' style='width: 100%;'>
-            <div class='text-box'>
+            <div class='text-box en'>
               An extension library for WMMA API (TensorCore API). <br>
+              <a href='https://github.com/wmmae/wmma_extension'>wmma-extension</a> - GitHub
+            </div>
+            <div class='text-box ja'>
+              Tensorコアを効率的に用いるための拡張ライブラリ。<br>
               <a href='https://github.com/wmmae/wmma_extension'>wmma-extension</a> - GitHub
             </div>
           </div>
           <div class='card'>
-            <h4>Baking Jomon pottery</h4>
+            <h4><span class='en'>Baking Jomon pottery</span><span class='ja'>縄文土器</span></h4>
             <img src='/images/doki.jpg' style='width: 100%;'>
-            <div class='text-box'>
+            <div class='text-box en'>
               I get clay from the ground and bake Jomon pottery(縄文土器).
+              <a href='https://x.momo86.net/?p=121'>Blog (Japanese)</a>
+            </div>
+            <div class='text-box ja'>
+              自宅の庭を掘って粘度を取り出し縄文式土器を焼いています。
               <a href='https://x.momo86.net/?p=121'>Blog (Japanese)</a>
             </div>
           </div>
         </div>
         <div class='5 col'>
           <div class='card'>
-            <h4>Pizza oven</h4>
+            <h4><span class='en'>Pizza oven</span><span class='ja'>ピザ窯づくり</span></h4>
             <img src='/images/pizza.jpg' style='width: 100%;'>
-            <div class='text-box'>
+            <div class='text-box en'>
               I built a pizza oven in my parents house.<br>
+              <a href='https://x.momo86.net/?p=63'>Blog (Japanese)</a>
+            </div>
+            <div class='text-box ja'>
+              試行錯誤しながら家にピザ窯を作っています。<br>
               <a href='https://x.momo86.net/?p=63'>Blog (Japanese)</a>
             </div>
           </div>
           <div class='card'>
-            <h4>Computer parts accessories</h4>
+            <h4><span class='en'>Computer parts accessories</span><span class='ja'>廃PC部品アクセサリ</span></h4>
             <img src='/images/accessory.jpg' style='width: 100%;'>
-            <div class='text-box'>
+            <div class='text-box en'>
               I make accessories from old/broken computer parts.<br>
+              <a href='https://atelier.momo86.net'>Web page (Japanese)</a>
+            </div>
+            <div class='text-box ja'>
+              廃PC部品を再利用してペンダントなどのアクセサリを作成しています。<br>
               <a href='https://atelier.momo86.net'>Web page (Japanese)</a>
             </div>
           </div>
           <div class='card'>
             <h4>NN-Image</h4>
             <img src='/images/nn-image.svg' style='width: 100%;'>
-            <div class='text-box'>
+            <div class='text-box en'>
               A web service which generates undirected fully-connected graph.</br>
+              <a href='https://nn-image.momo86.net'>nn-image</a>
+            </div>
+            <div class='text-box ja'>
+              全結合ニューラルネットワークの画像をさくっと作れるWebサイト。</br>
               <a href='https://nn-image.momo86.net'>nn-image</a>
             </div>
           </div>
           <div class='card'>
             <h4>cutf</h4>
             <img src='/images/cutf.png' style='width: 50%;'>
-            <div class='text-box'>
+            <div class='text-box en'>
               A tiny CUDA template wrapper for myself.
               This library contains from standard memory operators to experimental floating point operators.<br>
+              <a href='https://github.com/enp1s0/cutf'>cutf</a> - GitHub
+            </div>
+            <div class='text-box ja'>
+              CUDA関係のオレオレ拡張ライブラリ。
               <a href='https://github.com/enp1s0/cutf'>cutf</a> - GitHub
             </div>
           </div>
           <div class='card'>
             <h4>vico - a tiny job queue</h4>
             <img src='/images/vico.svg' style='width: 100%;'>
-            <div class='text-box'>
+            <div class='text-box en'>
               An tiny job queue (scheduler) using tmux. <br>
+              <a href='https://github.com/enp1s0/vico'>vico</a> - GitHub
+            </div>
+            <div class='text-box ja'>
+              tmuxのセッションを利用したジョブキュー。<br>
               <a href='https://github.com/enp1s0/vico'>vico</a> - GitHub
             </div>
           </div>
         </div>
       </div>
       <h3>Publications & Presentations</h3>
-      <ul>
+      <ul class='ja'>
         <li><b>大友広幸</b>,横田理央 "Tensorコアを用いた精度補正単精度行列積" 第180回ハイパフォーマンスコンピューティング研究会 2021</li>
         <li><b>Hiroyuki Ootomo</b>, Rio Yokota "TSQR on TensorCores with error correction", SIAM CSE'21[<a id='cse21-slide'>slide</a>]</li>
         <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Randomized SVD on TensorCores", ISC 2020 Research Poster [<a href='https://2020.isc-program.com/presentation/?id=post115&sess=sess325'>link</a>]</li>
@@ -278,37 +377,63 @@
         <li><b>大友広幸</b>,大沢和樹,横田理央 "フィッシャー情報行列のクロネッカー因子分解を用いた深層学習" 情報処理学会第80回全国大会 2018</li>
         <li><b>大友広幸</b>,大沢和樹,横田理央 "フィッシャー情報行列のクロネッカー因子分解を用いた深層ニューラルネットワークの分散学習"第163回ハイパフォーマンスコンピューティング研究会 2018</li>
       </ul>
+      <ul class='en'>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Matrix-matrix multiplication on Tensor Cores using error correction technique", High performance computing 180 (IPSJ) 2021</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "TSQR on TensorCores with error correction", SIAM CSE'21[<a id='cse21-slide'>slide</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Randomized SVD on TensorCores", ISC 2020 Research Poster [<a href='https://2020.isc-program.com/presentation/?id=post115&sess=sess325'>link</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Developing Tensor Core API extension by analyzing register fragment", High performance computing 173 (IPSJ) 2021</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Developing Tensor Core API extension by analyzing register fragment", High performance computing 173 (IPSJ) 2021</li>
+        <li>Naoki Yoshifuji,<b>Hiroyuki Ootomo</b> "Validation for Particle Method FLOSS", 33th Symposium on Computational Fluid Dynamics, 2019 [<a href='https://proc-cpuinfo.fixstars.com/2019/12/cfd33/'>blog</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "TSQR on Tensor Cores", SC19 Research Poster, 2019 [Best Poster Nominee] [<a id='sc19-poster'>poster</a>][<a id='sc19-slide'>slide</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "TSQR on Tensor Cores", The Japan Sciety for Insudtrial and Applied Mathematics, annual symposium 2019</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Batched QR on Tensor Cores", Information Processing Society of Japan, annual symposium 2019 [Student Encouragement Award]</li>
+        <li><b>Hiroyuki Ootomo</b>, Kazuki Osawa, Rio Yokota "Deep Learning Using Kronecker-factored Approximation of Fisher Matrix", Information Processing Society of Japan, annual symposium 2018</li>
+        <li><b>Hiroyuki Ootomo</b>, Kazuki Osawa, Rio Yokota "Distributed Deep Learning Using Kronecker-factored Approximation of Fisher Matrix", High performance computing 163 (IPSJ) 2018</li>
+      </ul>
       <h3>Other publications</h3>
-      <ul>
+      <ul class='ja'>
         <li>2019.06 「DualSPHysicsで静水圧問題」 <a href='https://opencae-kanto.connpass.com/event/130544/'>第76回オープンCAE勉強会＠関東（流体など）【大崎】</a> - [<a href='https://proc-cpuinfo.fixstars.com/2019/06/dualsphysics/'>発表後記</a>]</li>
         <li>2019.04 「vim入門」 第0回 <a href='https://rioyokotalab.github.io/vimvimvim/'>#061_vimvimvim</a> - [<a class='vimvimvim-0'>slide</a>]</li>
       </ul>
+      <ul class='en'>
+        <li>2019.06 "Hydrostatic pressure problem on DualSPHysics" <a href='https://opencae-kanto.connpass.com/event/130544/'>76th Open CAE study group, Kanto area</a> - [<a href='https://proc-cpuinfo.fixstars.com/2019/06/dualsphysics/'>Fixsraes tech blog</a>]</li>
+        <li>2019.04 "Introduction to vim" <a href='https://rioyokotalab.github.io/vimvimvim/'>#061_vimvimvim</a> - [<a class='vimvimvim-0'>slide</a>]</li>
+      </ul>
       <h3>Awards</h3>
-      <ul>
+      <ul class='ja'>
         <li>第3回 HAKKO熱の実験コンテスト 銀賞 「計算パーツの熱に関する実験」 2020 - <a href='https://x.momo86.net/?p=108'>ブログ</a></li>
+      </ul>
+      <ul class='en'>
+        <li> 2nd prize of heat experiment contest 2020 by HAKKO Corporation - <a href='https://x.momo86.net/?p=108'>Blog</a></li>
       </ul>
       <h3>iOS Apps</h3>
       <div class='row'>
         <div class='6 col'>
-          <h3>乱数生成</h3>
+          <h4>乱数生成</h4>
           <img src='/images/rand_gen.png' width=200>
-          <p>
+          <p class='ja'>
             メルセンヌ・ツイスタで疑似乱数を生成するアプリ
+          </p>
+          <p class='ja'>
+            Random number generator
           </p>
           <a href="https://apps.apple.com/jp/app/%E4%B9%B1%E6%95%B0%E7%94%9F%E6%88%90/id896309621?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2014-07-13&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>
         </div>
         <div class='6 col'>
-          <h3>色比較</h3>
+          <h4>色比較</h4>
           <img src='/images/color_comp.png' width=200>
-          <p>
+          <p class='ja'>
             カメラから得た2種類の色を比較するアプリ
+          </p>
+          <p class='en'>
+            Color comparison
           </p>
           <a href="https://apps.apple.com/jp/app/%E8%89%B2%E6%AF%94%E8%BC%83/id1295531816?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2017-10-13&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>
         </div>
       </div>
       <h3>Links</h3>
       <ul>
-        <li><a href='https://www.rio.gsic.titech.ac.jp/jp/index.html'>東京工業大学 学術国際情報センター 横田理央研究室 / Rio Yokota Lab</a></li>
+        <li><a href='https://www.rio.gsic.titech.ac.jp/jp/index.html'><span class='ja'>東京工業大学 学術国際情報センター 横田理央研究室</span><span class='en'>Rio Yokota Lab, TokyoTech</span></a></li>
         <li><a href='https://github.com/enp1s0/'>GitHub</a></li>
         <li><a href='https://gitlab.momo86.net/mutsuki/'>GitLab</a></li>
         <li><a href='https://x.momo86.net/'>Blog</a></li>
@@ -326,7 +451,7 @@
       </ul>
       <hr>
       <div id='footer'>
-        &copy; 2020 Ootomo Hiroyuki
+        &copy; Ootomo Hiroyuki
       </div>
     </div>
   </body>
@@ -336,5 +461,22 @@
     document.getElementById('sc19-slide').href='https://static.momo86.net/f/1/sc19-tsqr-on-tc-slide?ref=' + document.referrer;
     document.getElementById('cse21-slide').href='https://static.momo86.net/f/1/cse21-slide?ref=' + document.referrer;
     document.getElementById('vimvimvim-0').href='https://static.momo86.net/f/1/vimvimvim_2019?ref=' + document.referrer;
+  </script>
+  <script>
+    function set_display(c, p) {
+      var arrayOfElements=document.getElementsByClassName(c);
+      var lengthOfArray=arrayOfElements.length;
+      for (var i=0; i<lengthOfArray;i++){
+        arrayOfElements[i].style.display=p;
+      }
+    }
+    function to_ja() {
+      set_display('ja', 'inline');
+      set_display('en', 'none');
+    }
+    function to_en() {
+      set_display('ja', 'none');
+      set_display('en', 'inline');
+    }
   </script>
 </html>
