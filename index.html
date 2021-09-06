@@ -234,15 +234,19 @@
       <div class='card'>
         <h4>Numerical calculation using NVIDIA TensorCores</h4>
         <img src='/images/tensorcore.svg' style='width:90%;margin:auto;'>
-        <div class='text-box ja'>
-          Tensorコアは混合精度行列積和演算回路です．
-          Tensorコアへの入力行列は半精度である必要があり，これが行列積の精度を劣化させます．
-          この劣化はTensorコアの特長を活かした精度補正計算を行うことで緩和でき，これについての研究を行っています<a id='cse21-slide'>[SIAM CSE'21]</a>．
+        <div class='ja'>
+          <div class='text-box'>
+            Tensorコアは混合精度行列積和演算回路です．
+            Tensorコアへの入力行列は半精度である必要があり，これが行列積の精度を劣化させます．
+            この劣化はTensorコアの特長を活かした精度補正計算を行うことで緩和でき，これについての研究を行っています<a id='cse21-slide'>[SIAM CSE'21]</a>．
+          </div>
         </div>
-        <div class='text-box en'>
-          TensorCores are specialized hardware for matrix multiplication and addition and are available on the latest NVIDIA GPUs.
-          Converting input matrices to half precision on TensorCores results loss of accuracy.
-          We recover the accuracy by using an accuracy correction technique which leverages the single precision multiplication and addition of TensorCores<a id='cse21-slide'>[SIAM CSE'21]</a>.
+        <div class='en'>
+          <div class='text-box'>
+            TensorCores are specialized hardware for matrix multiplication and addition and are available on the latest NVIDIA GPUs.
+            Converting input matrices to half precision on TensorCores results loss of accuracy.
+            We recover the accuracy by using an accuracy correction technique which leverages the single precision multiplication and addition of TensorCores<a id='cse21-slide'>[SIAM CSE'21]</a>.
+          </div>
         </div>
       </div>
       <h3>Projects</h3>
@@ -251,51 +255,67 @@
           <div class='card'>
             <h4>High performance ATSUKAN Computing</h4>
             <img src='/images/atsukan.jpg' style='width: 100%;'>
-            <div class='text-box en'>
-              I built a GPU cluster to make hot sake (atsukan;熱燗).
-              Each node has two NVIDIA Tesla K20 GPUs and liquid cooling modules.
-              Gathered heat through cooling water is used to heat up sake.<br>
-              <a href='https://x.momo86.net/?p=108'>Blog (Japanese)</a>
+            <div class='en'>
+              <div class='text-box'>
+                I built a GPU cluster to make hot sake (atsukan;熱燗).
+                Each node has two NVIDIA Tesla K20 GPUs and liquid cooling modules.
+                Gathered heat through cooling water is used to heat up sake.<br>
+                <a href='https://x.momo86.net/?p=108'>Blog (Japanese)</a>
+              </div>
             </div>
-            <div class='text-box ja'>
-              8枚のNVIDIA K20xの排熱を利用して熱燗を作るための計算機クラスタを作成しました。
-              <a href='https://x.momo86.net/?p=108'>Blog (Japanese)</a>
+            <div class='ja'>
+              <div class='text-box'>
+                8枚のNVIDIA K20xの排熱を利用して熱燗を作るための計算機クラスタを作成しました。
+                <a href='https://x.momo86.net/?p=108'>Blog (Japanese)</a>
+              </div>
             </div>
           </div>
           <div class='card'>
             <h4>Iceberg wallpaper generator</h4>
             <img src='/images/iceberg-wallpaper.png' style='width: 100%;'>
-            <div class='text-box en'>
-              A web service which generates <a href='https://github.com/cocopon/iceberg.vim'>iceberg</a>-style wallpaper.<br>
-              <a href='https://iceberg-gen.momo86.net/'>iceberg-gen</a>
+            <div class='en'>
+              <div class='text-box'>
+                A web service which generates <a href='https://github.com/cocopon/iceberg.vim'>iceberg</a>-style wallpaper.<br>
+                <a href='https://iceberg-gen.momo86.net/'>iceberg-gen</a>
+              </div>
             </div>
-            <div class='text-box ja'>
-              <a href='https://github.com/cocopon/iceberg.vim'>iceberg</a>っぽい画像を作成するWebサイト。<br>
-              <a href='https://iceberg-gen.momo86.net/'>iceberg-gen</a>
+            <div class='ja'>
+              <div class='text-box'>
+                <a href='https://github.com/cocopon/iceberg.vim'>iceberg</a>っぽい画像を作成するWebサイト。<br>
+                <a href='https://iceberg-gen.momo86.net/'>iceberg-gen</a>
+              </div>
             </div>
           </div>
           <div class='card'>
             <h4>WMMA API extension</h4>
             <img src='/images/wmmae.png' style='width: 100%;'>
-            <div class='text-box en'>
-              An extension library for WMMA API (TensorCore API). <br>
-              <a href='https://github.com/wmmae/wmma_extension'>wmma-extension</a> - GitHub
+            <div class='en'>
+              <div class='text-box'>
+                An extension library for WMMA API (TensorCore API). <br>
+                <a href='https://github.com/wmmae/wmma_extension'>wmma-extension</a> - GitHub
+              </div>
             </div>
-            <div class='text-box ja'>
-              Tensorコアを効率的に用いるための拡張ライブラリ。<br>
-              <a href='https://github.com/wmmae/wmma_extension'>wmma-extension</a> - GitHub
+            <div class='ja'>
+              <div class='text-box'>
+                Tensorコアを効率的に用いるための拡張ライブラリ。<br>
+                <a href='https://github.com/wmmae/wmma_extension'>wmma-extension</a> - GitHub
+              </div>
             </div>
           </div>
           <div class='card'>
             <h4><span class='en'>Baking Jomon pottery</span><span class='ja'>縄文土器</span></h4>
             <img src='/images/doki.jpg' style='width: 100%;'>
-            <div class='text-box en'>
-              I get clay from the ground and bake Jomon pottery(縄文土器).
-              <a href='https://x.momo86.net/?p=121'>Blog (Japanese)</a>
+            <div class='en'>
+              <div class='text-box'>
+                I get clay from the ground and bake Jomon pottery(縄文土器).
+                <a href='https://x.momo86.net/?p=121'>Blog (Japanese)</a>
+              </div>
             </div>
-            <div class='text-box ja'>
-              自宅の庭を掘って粘度を取り出し縄文式土器を焼いています。
-              <a href='https://x.momo86.net/?p=121'>Blog (Japanese)</a>
+            <div class='ja'>
+              <div class='text-box'>
+                自宅の庭を掘って粘度を取り出し縄文式土器を焼いています。
+                <a href='https://x.momo86.net/?p=121'>Blog (Japanese)</a>
+              </div>
             </div>
           </div>
         </div>
@@ -303,62 +323,82 @@
           <div class='card'>
             <h4><span class='en'>Pizza oven</span><span class='ja'>ピザ窯づくり</span></h4>
             <img src='/images/pizza.jpg' style='width: 100%;'>
-            <div class='text-box en'>
-              I built a pizza oven in my parents house.<br>
-              <a href='https://x.momo86.net/?p=63'>Blog (Japanese)</a>
+            <div class='en'>
+              <div class='text-box'>
+                I built a pizza oven in my parents house.<br>
+                <a href='https://x.momo86.net/?p=63'>Blog (Japanese)</a>
+              </div>
             </div>
-            <div class='text-box ja'>
-              試行錯誤しながら家にピザ窯を作っています。<br>
-              <a href='https://x.momo86.net/?p=63'>Blog (Japanese)</a>
+            <div class='ja'>
+              <div class='text-box'>
+                試行錯誤しながら家にピザ窯を作っています。<br>
+                <a href='https://x.momo86.net/?p=63'>Blog (Japanese)</a>
+              </div>
             </div>
           </div>
           <div class='card'>
             <h4><span class='en'>Computer parts accessories</span><span class='ja'>廃PC部品アクセサリ</span></h4>
             <img src='/images/accessory.jpg' style='width: 100%;'>
-            <div class='text-box en'>
-              I make accessories from old/broken computer parts.<br>
-              <a href='https://atelier.momo86.net'>Web page (Japanese)</a>
+            <div class='en'>
+              <div class='text-box'>
+                I make accessories from old/broken computer parts.<br>
+                <a href='https://atelier.momo86.net'>Web page (Japanese)</a>
+              </div>
             </div>
-            <div class='text-box ja'>
-              廃PC部品を再利用してペンダントなどのアクセサリを作成しています。<br>
-              <a href='https://atelier.momo86.net'>Web page (Japanese)</a>
+            <div class='ja'>
+              <div class='text-box'>
+                廃PC部品を再利用してペンダントなどのアクセサリを作成しています。<br>
+                <a href='https://atelier.momo86.net'>Web page (Japanese)</a>
+              </div>
             </div>
           </div>
           <div class='card'>
             <h4>NN-Image</h4>
             <img src='/images/nn-image.svg' style='width: 100%;'>
-            <div class='text-box en'>
-              A web service which generates undirected fully-connected graph.</br>
-              <a href='https://nn-image.momo86.net'>nn-image</a>
+            <div class='en'>
+              <div class='text-box'>
+                A web service which generates undirected fully-connected graph.</br>
+                <a href='https://nn-image.momo86.net'>nn-image</a>
+              </div>
             </div>
-            <div class='text-box ja'>
-              全結合ニューラルネットワークの画像をさくっと作れるWebサイト。</br>
-              <a href='https://nn-image.momo86.net'>nn-image</a>
+            <div class='ja'>
+              <div class='text-box'>
+                全結合ニューラルネットワークの画像をさくっと作れるWebサイト。</br>
+                <a href='https://nn-image.momo86.net'>nn-image</a>
+              </div>
             </div>
           </div>
           <div class='card'>
             <h4>cutf</h4>
             <img src='/images/cutf.png' style='width: 50%;'>
-            <div class='text-box en'>
-              A tiny CUDA template wrapper for myself.
-              This library contains from standard memory operators to experimental floating point operators.<br>
-              <a href='https://github.com/enp1s0/cutf'>cutf</a> - GitHub
+            <div class='en'>
+              <div class='text-box'>
+                A tiny CUDA template wrapper for myself.
+                This library contains from standard memory operators to experimental floating point operators.<br>
+                <a href='https://github.com/enp1s0/cutf'>cutf</a> - GitHub
+              </div>
             </div>
-            <div class='text-box ja'>
-              CUDA関係のオレオレ拡張ライブラリ。
-              <a href='https://github.com/enp1s0/cutf'>cutf</a> - GitHub
+            <div class='ja'>
+              <div class='text-box'>
+                CUDA関係のオレオレ拡張ライブラリ。
+                <a href='https://github.com/enp1s0/cutf'>cutf</a> - GitHub
+              </div>
             </div>
           </div>
           <div class='card'>
             <h4>vico - a tiny job queue</h4>
             <img src='/images/vico.svg' style='width: 100%;'>
-            <div class='text-box en'>
-              An tiny job queue (scheduler) using tmux. <br>
-              <a href='https://github.com/enp1s0/vico'>vico</a> - GitHub
+            <div class='en'>
+              <div class='text-box'>
+                An tiny job queue (scheduler) using tmux. <br>
+                <a href='https://github.com/enp1s0/vico'>vico</a> - GitHub
+              </div>
             </div>
-            <div class='text-box ja'>
-              tmuxのセッションを利用したジョブキュー。<br>
-              <a href='https://github.com/enp1s0/vico'>vico</a> - GitHub
+            <div class='ja'>
+              <div class='text-box'>
+                tmuxのセッションを利用したジョブキュー。<br>
+                <a href='https://github.com/enp1s0/vico'>vico</a> - GitHub
+              </div>
             </div>
           </div>
         </div>
@@ -411,23 +451,31 @@
         <div class='6 col'>
           <h4>乱数生成</h4>
           <img src='/images/rand_gen.png' width=200>
-          <p class='ja'>
+          <div class='ja'>
+            <p>
             メルセンヌ・ツイスタで疑似乱数を生成するアプリ
-          </p>
-          <p class='ja'>
+            </p>
+          </div>
+          <div class='en'>
+            <p>
             Random number generator
-          </p>
+            </p>
+          </div>
           <a href="https://apps.apple.com/jp/app/%E4%B9%B1%E6%95%B0%E7%94%9F%E6%88%90/id896309621?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2014-07-13&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>
         </div>
         <div class='6 col'>
           <h4>色比較</h4>
           <img src='/images/color_comp.png' width=200>
-          <p class='ja'>
+          <div class='ja'>
+            <p>
             カメラから得た2種類の色を比較するアプリ
-          </p>
-          <p class='en'>
+            </p>
+          </div>
+          <div class='en'>
+            <p>
             Color comparison
-          </p>
+            </p>
+          </div>
           <a href="https://apps.apple.com/jp/app/%E8%89%B2%E6%AF%94%E8%BC%83/id1295531816?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2017-10-13&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>
         </div>
       </div>
