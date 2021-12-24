@@ -275,18 +275,18 @@
             </div>
           </div>
           <div class='card'>
-            <h4>Iceberg wallpaper generator</h4>
+            <h4>What can a thief steal?</h4>
             <img src='/images/iceberg-wallpaper.png' style='width: 100%;'>
             <div class='en'>
               <div class='text-box'>
-                A web service which generates <a href='https://github.com/cocopon/iceberg.vim'>iceberg</a>-style wallpaper.<br>
-                <a href='https://iceberg-gen.momo86.net/'>iceberg-gen</a>
+                I put a private key printed on a paper at the university.
+                How much time and interest can <b>I</b> steal from people?
               </div>
             </div>
             <div class='ja'>
               <div class='text-box'>
-                <a href='https://github.com/cocopon/iceberg.vim'>iceberg</a>っぽい画像を作成するWebサイト。<br>
-                <a href='https://iceberg-gen.momo86.net/'>iceberg-gen</a>
+                公開鍵を印刷した紙を大学内に置きました。
+                <b>私は</b>どれほど人の時間と興味を奪えるでしょうか？
               </div>
             </div>
           </div>
@@ -369,6 +369,22 @@
               <div class='text-box'>
                 全結合ニューラルネットワークの画像をさくっと作れるWebサイト。</br>
                 <a href='https://nn-image.momo86.net'>nn-image</a>
+              </div>
+            </div>
+          </div>
+          <div class='card'>
+            <h4>Iceberg wallpaper generator</h4>
+            <img src='/images/iceberg-wallpaper.png' style='width: 100%;'>
+            <div class='en'>
+              <div class='text-box'>
+                A web service which generates <a href='https://github.com/cocopon/iceberg.vim'>iceberg</a>-style wallpaper.<br>
+                <a href='https://iceberg-gen.momo86.net/'>iceberg-gen</a>
+              </div>
+            </div>
+            <div class='ja'>
+              <div class='text-box'>
+                <a href='https://github.com/cocopon/iceberg.vim'>iceberg</a>っぽい画像を作成するWebサイト。<br>
+                <a href='https://iceberg-gen.momo86.net/'>iceberg-gen</a>
               </div>
             </div>
           </div>
@@ -535,8 +551,7 @@
           window.navigator.language ||
           window.navigator.userLanguage ||
           window.navigator.browserLanguage;
-      console.log(language);
-      if (language == 'ja') {
+      if (language == 'ja' || language == 'ja-JP') {
         to_ja();
       }
     }
