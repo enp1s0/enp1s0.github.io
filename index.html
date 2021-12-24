@@ -530,12 +530,15 @@
       set_display('ja', 'none');
       set_display('en', 'inline');
     }
-    const language = (window.navigator.languages && window.navigator.languages[0]) ||
-        window.navigator.language ||
-        window.navigator.userLanguage ||
-        window.navigator.browserLanguage;
-    if (language == 'ja') {
-      to_ja();
+    function init_lang() {
+      const language = (window.navigator.languages && window.navigator.languages[0]) ||
+          window.navigator.language ||
+          window.navigator.userLanguage ||
+          window.navigator.browserLanguage;
+      console.log(language);
+      if (language == 'ja') {
+        to_ja();
+      }
     }
   </script>
 </html>
