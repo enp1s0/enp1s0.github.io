@@ -243,14 +243,16 @@
           <div class='text-box'>
             Tensorコアは混合精度行列積和演算回路です．
             Tensorコアへの入力行列は半精度である必要があり，これが行列積の精度を劣化させます．
-            この劣化はTensorコアの特長を活かした精度補正計算を行うことで緩和でき，これについての研究を行っています<a id='cse21-slide'>[SIAM CSE'21]</a>．
+            この劣化はTensorコアの特長を活かした精度補正計算を行うことで緩和でき，これに加えTensorコア内部の一部の丸め（RZ）を上手に回避することでFP32と同じ精度で行列積を計算できるようにする研究を行っています．
+            詳しくは[論文](https://arxiv.org/abs/2203.03341)をご覧ください．
           </div>
         </div>
         <div class='en'>
           <div class='text-box'>
             TensorCores are specialized hardware for matrix multiplication and addition and are available on the latest NVIDIA GPUs.
             Converting input matrices to half precision on TensorCores results loss of accuracy.
-            We recover the accuracy by using an accuracy correction technique which leverages the single precision multiplication and addition of TensorCores<a id='cse21-slide'>[SIAM CSE'21]</a>.
+            We recover the accuracy using an error correction technique and avoiding the rounding inside Tensor Cores (RZ).
+            See [our paper](https://arxiv.org/abs/2203.03341) for more detail.
           </div>
         </div>
       </div>
