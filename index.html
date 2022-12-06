@@ -248,20 +248,20 @@
       </div>
       <h3>Research</h3>
       <div class='card'>
-        <h4>SGEMM emulation on NVIDIA TensorCores with error correction method</h4>
+        <h4>SGEMM emulation on NVIDIA Tensor Cores with error correction method</h4>
         <img src='/images/tcec.png' style='width:100%;max-width:1000px;margin:auto;'>
         <div class='ja'>
           <div class='text-box'>
-            Tensorコアは混合精度行列積和演算回路です．
-            Tensorコアへの入力行列は半精度である必要があり，これが行列積の精度を劣化させます．
+            TensorコアはNVIDIA GPU上に搭載された混合精度行列積和演算回路です．
+            Tensorコアを用いて単精度行列積を計算する場合でも，Tensorコアへの入力行列は半精度である必要があり，これが行列積の精度を劣化させます．
             この劣化はTensorコアの特長を活かした精度補正計算を行うことで緩和でき，これに加えTensorコア内部の一部の丸め（RZ）を上手に回避することでFP32と同じ精度で行列積を計算できるようにする研究を行っています．
             詳しくは <a href='https://arxiv.org/abs/2203.03341'>論文</a> をご覧ください．
           </div>
         </div>
         <div class='en'>
           <div class='text-box'>
-            TensorCores are specialized hardware for matrix multiplication and addition and are available on the latest NVIDIA GPUs.
-            Converting input matrices to half precision on TensorCores results loss of accuracy.
+            Tensor Cores are specialized hardware for matrix multiplication and addition and are available on the latest NVIDIA GPUs.
+            Converting input matrices to half precision on TensorCores results loss of accuracy when computing a single-precision matrix multiplication.
             We recover the accuracy using an error correction technique and avoiding the rounding inside Tensor Cores (RZ).
             See <a href='https://arxiv.org/abs/2203.03341'>our paper</a> for more detail.
           </div>
