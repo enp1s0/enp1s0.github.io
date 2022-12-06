@@ -543,15 +543,9 @@
   </body>
   <script>
     function set_class_href(name, link) {
-      var elements = document.getElementsByTagName(name);
+      var elements = document.getElementsByClassName(name);
       for (var i = 0; i < elements.length; i++) {
-        if (elements[i].href === '/ContactClub') {
-          if (elements.setAttribute !== 'function') {
-            elements[i].href = link;
-          } else {
-            elements[i].setAttribute('href', link);
-          }
-        }
+        elements[i].href = link;
       }
     }
     document.getElementById('profile-image').src='https://static.momo86.net/f/1/ootomo_image?ref=' + document.referrer;
