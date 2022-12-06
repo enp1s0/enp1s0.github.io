@@ -275,7 +275,7 @@
             近似最近某探索（ANNS; Approximate Nearest Neighbor Search）のアルゴリズムの一つであるIVFPQをGPU用に実装する場合、Sharedメモリに対するランダムアクセスによりバンクコンフリクトが発生し、性能が低下する可能性がある。
             バンクコンフリクトを緩和する方法として低bit長変数の使用が挙げられ、GPU上で値の保持だけに用いる低変換コストな8-bit浮動小数点数の設計を行います。
             IVFPQの性質上値は常に0以上であるため符号部は不必要であるなど、アプリケーションの性質に合わせたものとなっており、IVFPQにおいて多少の性能劣化を許容すれば計算性能を向上させることが確認されています。
-            詳しくは<a href='' class='sc22-poster'>ポスター</a>をご覧ください。
+            詳しくは<a class='sc22-poster'>ポスター</a>をご覧ください。
           </div>
         </div>
         <div class='en'>
@@ -285,7 +285,7 @@
             We design an 8-bit floating point value format specialized for IVFPQ.
             For instance, the format does not have the sign bit since the values are always positive.
             Our format increases the throughput of IVFPQ on GPU while a bit of accuracy degradation.
-            See <a href='' class='sc22-poster'>our poster</a> for more detail.
+            See <a class='sc22-poster'>our poster</a> for more detail.
           </div>
         </div>
       </div>
@@ -321,7 +321,7 @@
         <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Recovering single precision accuracy from Tensor Cores while surpassing the FP32 theoretical peak performance", IJHPCA, 2022 [<a href='https://journals.sagepub.com/eprint/C6XUQKVBS3PU5SXTTFIJ/full'>journal</a>][<a href='https://arxiv.org/abs/2203.03341'>preprint</a>]</li>
         <li><b>Hiroyuki Ootomo</b>, Rio Yokota "TSQR on TensorCores with error correction", SIAM CSE'21[<a id='cse21-slide'>slide</a>]</li>
         <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Randomized SVD on TensorCores", ISC 2020 Research Poster [<a href='https://2020.isc-program.com/presentation/?id=post115&sess=sess325'>link</a>]</li>
-        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "TSQR on Tensor Cores", SC19 Research Poster, 2019 [Best Poster Nominee] [<a id='sc19-poster'>poster</a>][<a id='sc19-slide'>slide</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "TSQR on Tensor Cores", SC19 Research Poster, 2019 [Best Poster Nominee] [<a class='sc19-poster'>poster</a>][<a id='sc19-slide'>slide</a>]</li>
       </ul>
       <h3>Other publications / presentations</h3>
       <ul class='ja'>
@@ -542,12 +542,24 @@
     </div>
   </body>
   <script>
+    function set_class_href(name, link) {
+      var elements = document.getElementsByTagName(name);
+      for (var i = 0; i < elements.length; i++) {
+        if (element[i].href === '/ContactClub') {
+          if (element.setAttribute !== 'function') {
+            element[i].href = link;
+          } else {
+            element[i].setAttribute('href', link);
+          }
+        }
+      }
+    }
     document.getElementById('profile-image').src='https://static.momo86.net/f/1/ootomo_image?ref=' + document.referrer;
-    document.getElementsByClassName('sc19-poster').href='https://static.momo86.net/f/1/sc19-tsqr-on-tc-poster?ref=' + document.referrer;
-    document.getElementsByClassName('sc22-poster').href='https://static.momo86.net/f/1/sc22-poster?ref=' + document.referrer;
+    set_class_href('sc19-poster', 'https://static.momo86.net/f/1/sc19-tsqr-on-tc-poster?ref=' + document.referrer);
+    set_class_href('sc22-poster', 'https://static.momo86.net/f/1/sc22-poster?ref=' + document.referrer);
     document.getElementById('sc19-slide').href='https://static.momo86.net/f/1/sc19-tsqr-on-tc-slide?ref=' + document.referrer;
     document.getElementById('cse21-slide').href='https://static.momo86.net/f/1/cse21-slide?ref=' + document.referrer;
-    document.getElementsByClassName('vimvimvim-0').href='https://static.momo86.net/f/1/vimvimvim_2019?ref=' + document.referrer;
+    set_class_href('vimvimvim-0', 'https://static.momo86.net/f/1/vimvimvim_2019?ref=' + document.referrer);
   </script>
   <script>
     function set_display(c, p) {
