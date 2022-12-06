@@ -545,11 +545,11 @@
     function set_class_href(name, link) {
       var elements = document.getElementsByTagName(name);
       for (var i = 0; i < elements.length; i++) {
-        if (element[i].href === '/ContactClub') {
-          if (element.setAttribute !== 'function') {
-            element[i].href = link;
+        if (elements[i].href === '/ContactClub') {
+          if (elements.setAttribute !== 'function') {
+            elements[i].href = link;
           } else {
-            element[i].setAttribute('href', link);
+            elements[i].setAttribute('href', link);
           }
         }
       }
