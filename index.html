@@ -267,6 +267,28 @@
           </div>
         </div>
       </div>
+      <div class='card'>
+        <h4>Custom 8-bit floating point value format for ANNS/IVFPQ on GPU</h4>
+        <img src='/images/e5m3.png' style='width:100%;max-width:1000px;margin:auto;'>
+        <div class='ja'>
+          <div class='text-box'>
+            近似最近某探索（ANNS; Approximate Nearest Neighbor Search）のアルゴリズムの一つであるIVFPQをGPU用に実装する場合、Sharedメモリに対するランダムアクセスによりバンクコンフリクトが発生し、性能が低下する可能性がある。
+            バンクコンフリクトを緩和する方法として低bit長変数の使用が挙げられ、GPU上で値の保持だけに用いる低変換コストな8-bit浮動小数点数の設計を行います。
+            IVFPQの性質上値は常に0以上であるため符号部は不必要であるなど、アプリケーションの性質に合わせたものとなっており、IVFPQにおいて多少の性能劣化を許容すれば計算性能を向上させることが確認されています。
+            詳しくは<a class='sc22-poster'>ポスター</a>をご覧ください。
+          </div>
+        </div>
+        <div class='en'>
+          <div class='text-box'>
+            When implementing IVFPQ, one of the algorithms of ANNS (Approximate Nearest Neighbor Search), for GPU, the shared memory bank conflict may occur.
+            One of the ways to reduce the probability of bank conflict is to use a low-precision variable for the data on shared memory.
+            We design an 8-bit floating point value format specialized for IVFPQ.
+            For instance, the format does not have the sign bit since the values are always positive.
+            Our format increases the throughput of IVFPQ on GPU while a bit of accuracy degradation.
+            See <a class='sc22-poster'>our poster</a> for more detail.
+          </div>
+        </div>
+      </div>
       <h3>Publications & Presentations</h3>
       <ul class='ja'>
       </ul>
@@ -522,6 +544,7 @@
   <script>
     document.getElementById('profile-image').src='https://static.momo86.net/f/1/ootomo_image?ref=' + document.referrer;
     document.getElementsByClassName('sc19-poster').href='https://static.momo86.net/f/1/sc19-tsqr-on-tc-poster?ref=' + document.referrer;
+    document.getElementsByClassName('sc22-poster').href='https://static.momo86.net/f/1/sc22-poster?ref=' + document.referrer;
     document.getElementById('sc19-slide').href='https://static.momo86.net/f/1/sc19-tsqr-on-tc-slide?ref=' + document.referrer;
     document.getElementById('cse21-slide').href='https://static.momo86.net/f/1/cse21-slide?ref=' + document.referrer;
     document.getElementById('vimvimvim-0').href='https://static.momo86.net/f/1/vimvimvim_2019?ref=' + document.referrer;
