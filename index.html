@@ -290,7 +290,7 @@
         <img src='/images/e5m3.png' style='width:100%;max-width:640px;margin:auto;'>
         <div class='ja'>
           <div class='text-box'>
-            近似最近某探索（ANNS; Approximate Nearest Neighbor Search）のアルゴリズムの一つであるIVFPQをGPU用に実装する場合、Sharedメモリに対するランダムアクセスによりバンクコンフリクトが発生し、性能が低下する可能性がある。
+            近似最近傍探索（ANNS; Approximate Nearest Neighbor Search）のアルゴリズムの一つであるIVFPQをGPU用に実装する場合、Sharedメモリに対するランダムアクセスによりバンクコンフリクトが発生し、性能が低下する可能性がある。
             バンクコンフリクトを緩和する方法として低bit長変数の使用が挙げられ、GPU上で値の保持だけに用いる低変換コストな8-bit浮動小数点数の設計を行います。
             IVFPQの性質上値は常に0以上であるため符号部は不必要であるなど、アプリケーションの性質に合わせたものとなっており、IVFPQにおいて多少の性能劣化を許容すれば計算性能を向上させることが確認されています。
             詳しくは<a class='sc22-poster'>ポスター</a>をご覧ください。
