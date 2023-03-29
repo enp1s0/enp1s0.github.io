@@ -62,6 +62,7 @@
             <li><span class='ja'>高性能計算</span><span class='en'>High performance computing</span>
               <ul>
                 <li><span class='ja'>低精度/混合精度演算</span><span class='en'>Mixed precision computing</span></li>
+                <li><span class='ja'>数値線形代数</span><span class='en'>Numerical Linear Algebra</span></li>
                 <li><span class='ja'>量子回路シミュレーション</span><span class='en'>Quantum circuit simulation</span></li>
               </ul>
             </li>
@@ -307,45 +308,65 @@
           </div>
         </div>
       </div>
-      <h3>Publications & Presentations</h3>
+      <h3>Publications (Peer-reviewed)</h3>
       <ul class='ja'>
-        <li><b>Hiroyuki Ootomo</b>, Hidetaka Manabe, Kenji Harada, and Rio Yokota "Quantum Circuit Simulation by SGEMM Emulation on Tensor Cores and Automatic Precision Selection",  ISC high performance, 2023, [<a href='https://arxiv.org/abs/2303.08989'>preprint</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Hidetaka Manabe, Kenji Harada, and Rio Yokota, "Quantum Circuit Simulation by SGEMM Emulation on Tensor Cores and Automatic Precision Selection",  ISC high performance, 2023, [<a href='https://arxiv.org/abs/2303.08989'>preprint</a>]</li>
       </ul>
       <ul class='en'>
-        <li><b>Hiroyuki Ootomo</b>, Hidetaka Manabe, Kenji Harada, and Rio Yokota "Quantum Circuit Simulation by SGEMM Emulation on Tensor Cores and Automatic Precision Selection",  ISC high performance, 2023, [<a href='https://arxiv.org/abs/2303.08989'>preprint</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Hidetaka Manabe, Kenji Harada, and Rio Yokota, "Quantum Circuit Simulation by SGEMM Emulation on Tensor Cores and Automatic Precision Selection",  ISC high performance, 2023, [<a href='https://arxiv.org/abs/2303.08989'>preprint</a>]</li>
       </ul>
       <hr class='lite-hr'>
       <ul class='ja'>
-        <li><b>大友広幸</b>,真鍋秀隆,原田健自,横田理央 "Tensorコアによる単精度行列積エミュレーションの自動精度選択を用いた量子回路シミュレーション", 第188回 HPC研究会, 2023 [<a href='https://www.ipsj.or.jp/kenkyukai/event/hpc188.html'>link</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota, "Reducing shared memory footprint to leverage high throughput on Tensor Cores and its flexible API extension library", HPCAsia, 2023 (Best Paper) [<a href='https://dl.acm.org/doi/abs/10.1145/3578178.3578238'>link</a>]</li>
+        <li>Shaoshuai Zhang, Ruchi Shah, <b>Hiroyuki Ootomo</b>, Rio Yokota, Panruo Wu, "Fast Symmetric Eigenvalue Decomposition via WY Representation on Tensor Core", PPoPP, 2023 [<a href='https://dl.acm.org/doi/abs/10.1145/3572848.3577516'>link</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Akira Naruse, "Custom 8-bit Floating Point Value Format for Reducing Shared Memory Bank Conflict in Approximate Nearest Neighbor Search", SC22 Research Poster, 2022 [<a href='https://arxiv.org/abs/2301.06672'>abstract</a>][<a class='sc22-poster'>poster</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota, "Recovering single precision accuracy from Tensor Cores while surpassing the FP32 theoretical peak performance", IJHPCA, 2022 [<a href='https://journals.sagepub.com/eprint/C6XUQKVBS3PU5SXTTFIJ/full'>journal</a>][<a href='https://arxiv.org/abs/2203.03341'>preprint</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota, "Randomized SVD on TensorCores", ISC 2020 Research Poster [<a href='https://2020.isc-program.com/presentation/?id=post115&sess=sess325'>link</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota, "TSQR on Tensor Cores", SC19 Research Poster, 2019 [Best Poster Candidate] [<a class='sc19-poster'>poster</a>][<a id='sc19-slide'>slide</a>]</li>
+      </ul>
+      <ul class='en'>
         <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Reducing shared memory footprint to leverage high throughput on Tensor Cores and its flexible API extension library",  HPCAsia, 2023 (Best Paper) [<a href='https://dl.acm.org/doi/abs/10.1145/3578178.3578238'>link</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Akira Naruse "Custom 8-bit Floating Point Value Format for Reducing Shared Memory Bank Conflict in Approximate Nearest Neighbor Search", SC22 Research Poster, 2022 [<a href='https://arxiv.org/abs/2301.06672'>abstract</a>][<a class='sc22-poster'>poster</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Recovering single precision accuracy from Tensor Cores while surpassing the FP32 theoretical peak performance", IJHPCA, 2022 [<a href='https://journals.sagepub.com/eprint/C6XUQKVBS3PU5SXTTFIJ/full'>journal</a>][<a href='https://arxiv.org/abs/2203.03341'>preprint</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Randomized SVD on TensorCores", ISC 2020 Research Poster [<a href='https://2020.isc-program.com/presentation/?id=post115&sess=sess325'>link</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "TSQR on Tensor Cores", SC19 Research Poster, 2019 [Best Poster Candidate] [<a class='sc19-poster'>poster</a>][<a id='sc19-slide'>slide</a>]</li>
+      </ul>
+      <h3>Publications & Presentations (Non peer-reviewed)</h3>
+      <ul class='ja'>
+        <li><b>大友広幸</b>,真鍋秀隆,原田健自,横田理央 "Tensorコアによる単精度行列積エミュレーションの自動精度選択を用いた量子回路シミュレーション", 第188回 HPC研究会, 2023 [<a href='https://www.ipsj.or.jp/kenkyukai/event/hpc188.html'>link</a>]</li>
         <li><b>大友広幸</b> "NVIDIA Tensorコアを用いたテンソルネットワーク型量子回路シミュレーション", 第18回 High Performance Computing Physics (HPC-Phys) 勉強会, 2023 [<a href='https://static.momo86.net/f/1/hpc-phys-18'>slide</a>]</li>
         <li><b>大友広幸</b>,坂本亮 "PEZY-SC3sプロセッサを用いたFull-state量子回路シミュレーション", 第187回ハイパフォーマンスコンピューティング研究会, 2022</li>
-        <li><b>Hiroyuki Ootomo</b>, Akira Naruse "Custom 8-bit Floating Point Value Format for Reducing Shared Memory Bank Conflict in Approximate Nearest Neighbor Search", SC22 Research Poster, 2022 [<a href='https://arxiv.org/abs/2301.06672'>abstract</a>][<a class='sc22-poster'>poster</a>]</li>
         <li>真鍋秀隆, <b>大友広幸</b> "Tensorコアを用いた量子回路シミュレーションの高速化" 第7回量子ソフトウェア研究発表会, 2022</li>
         <li><b>大友広幸</b>,横田理央 "NVIDIA Tensorコアを用いた単精度行列積エミュレーション" RIMS共同研究 (公開型) 数値解析が拓く次世代情報社会～エッジから富岳まで～, 2022</li>
         <li><b>大友広幸</b>,横田理央 "Tensorコアを用いた単精度行列積エミュレーションのアプリケーションでの評価" 第185回ハイパフォーマンスコンピューティング研究会 （SWoPP 2022）</li>
         <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Recovering single precision accuracy from Tensor Cores while surpassing the FP32 theoretical peak performance", ECP multiprecision team meeting [<a href='https://static.momo86.net/f/1/ecp-mp-202204'>slide</a>]</li>
-        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Recovering single precision accuracy from Tensor Cores while surpassing the FP32 theoretical peak performance", IJHPCA, 2022 [<a href='https://journals.sagepub.com/eprint/C6XUQKVBS3PU5SXTTFIJ/full'>journal</a>][<a href='https://arxiv.org/abs/2203.03341'>preprint</a>]</li>
         <li><b>大友広幸</b>,横田理央 "Tensorコアを用いた精度補正単精度行列積" 第180回ハイパフォーマンスコンピューティング研究会 （SWoPP 2021）</li>
         <li><b>Hiroyuki Ootomo</b>, Rio Yokota "TSQR on TensorCores with error correction", SIAM CSE'21[<a class='cse21-slide'>slide</a>]</li>
-        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Randomized SVD on TensorCores", ISC 2020 Research Poster [<a href='https://2020.isc-program.com/presentation/?id=post115&sess=sess325'>link</a>]</li>
         <li><b>大友広幸</b>,横田理央 "TensorコアのAPIの構造解析を用いた拡張ライブラリの開発" 第173回ハイパフォーマンスコンピューティング研究会 2020 [<a href='https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=203863&item_no=1&page_id=13&block_id=8'>link</a>]</li>
         <li>吉藤尚生,<b>大友広幸</b> "粒子法FLOSSに対する妥当性確認試験" 第33回数値流体力学シンポジウム 2019 [<a href='https://proc-cpuinfo.fixstars.com/2019/12/cfd33/'>blog</a>]</li>
-        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "TSQR on TensorCores" SC19 Research Poster, 2019 [Best Poster Candidate] [<a class='sc19-poster' href=''>poster</a>][<a id='sc19-slide'>slide</a>]</li>
         <li><b>大友広幸</b>,横田理央 "Tensorコアを用いたTSQR" 日本応用数理学会 2019年度 年会 2019</li>
         <li><b>大友広幸</b>,横田理央 "Tensorコアを用いたTSQRのGPU実装" 第170回ハイパフォーマンスコンピューティング研究会 2019</li>
         <li><b>大友広幸</b>,横田理央 "Tensorコアを用いたBatced QR分解" 情報処理学会第81回全国大会 2019 [学生奨励賞]</li>
         <li><b>大友広幸</b>,大沢和樹,横田理央 "フィッシャー情報行列のクロネッカー因子分解を用いた深層学習" 情報処理学会第80回全国大会 2018</li>
         <li><b>大友広幸</b>,大沢和樹,横田理央 "フィッシャー情報行列のクロネッカー因子分解を用いた深層ニューラルネットワークの分散学習"第163回ハイパフォーマンスコンピューティング研究会 2018</li>
       </ul>
-      <ul class='en'>
-        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Reducing shared memory footprint to leverage high throughput on Tensor Cores and its flexible API extension library",  HPCAsia, 2023 (Best Paper) [<a href='https://dl.acm.org/doi/abs/10.1145/3578178.3578238'>link</a>]</li>
-        <li><b>Hiroyuki Ootomo</b>, Akira Naruse "Custom 8-bit Floating Point Value Format for Reducing Shared Memory Bank Conflict in Approximate Nearest Neighbor Search", SC22 Research Poster, 2022 [<a href='https://arxiv.org/abs/2301.06672'>abstract</a>][<a class='sc22-poster'>poster</a>]</li>
-        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Recovering single precision accuracy from Tensor Cores while surpassing the FP32 theoretical peak performance", ECP multiprecision team meeting [<a href='https://static.momo86.net/f/1/ecp-mp-202204'>slide</a>]</li>
-        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Recovering single precision accuracy from Tensor Cores while surpassing the FP32 theoretical peak performance", IJHPCA, 2022 [<a href='https://journals.sagepub.com/eprint/C6XUQKVBS3PU5SXTTFIJ/full'>journal</a>][<a href='https://arxiv.org/abs/2203.03341'>preprint</a>]</li>
-        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "TSQR on TensorCores with error correction", SIAM CSE'21[<a class='cse21-slide'>slide</a>]</li>
-        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "Randomized SVD on TensorCores", ISC 2020 Research Poster [<a href='https://2020.isc-program.com/presentation/?id=post115&sess=sess325'>link</a>]</li>
-        <li><b>Hiroyuki Ootomo</b>, Rio Yokota "TSQR on Tensor Cores", SC19 Research Poster, 2019 [Best Poster Candidate] [<a class='sc19-poster'>poster</a>][<a id='sc19-slide'>slide</a>]</li>
+      <ul class='ja'>
+        <li><b>Hiroyuki Ootomo</b>, Hidetaka Manabe, Kenji Harada, Rio Yokota, "Quantum Circuit Simulation by SGEMM Emulation on Tensor Cores and Automatic Precision Selection," IPSJ HPC Workshop #188, 2023 [<a href='https://www.ipsj.or.jp/kenkyukai/event/hpc188.html'>link</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, "Quantum Circuit Simulation by Tensor Network Contraction on NVIDIA Tensor Cores," High Performance Computing Physics (HPC-Phys) Workshop #18, 2023 [<a href='https://static.momo86.net/f/1/hpc-phys-18'>slide</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Ryo Sakamoto,"State-vector Quantum Circuit Simulation on PEZY-SC3s Processor," IPSJ HPC Workshop #189, 2022</li>
+        <li>Hidetaka Manabe, <b>Hiroyuki Ootomo</b>, "Throughput Improvement of Quantum Circuit Simulation using NVIDIA Tensor Cores," IPSJ Quantum Software Workshop #7, 2022</li>
+        <li><b>Hiroyuki Ootomo</b>, "SGEMM Emulation on Tensor Cores," RIMS Workshop, 2022</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota, "Applying SGEMM emulation on Tensor Cores to HPC Applications," IPSJ HPC Workshop #185 (SWoPP), 2022</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota, "Recovering single precision accuracy from Tensor Cores while surpassing the FP32 theoretical peak performance," ECP multiprecision team meeting [<a href='https://static.momo86.net/f/1/ecp-mp-202204'>slide</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota, "SGEMM Emulation on Tensor Cores," IPSJ HPC workshop #180 (SWoPP), 2021</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota, "TSQR on TensorCores with error correction", SIAM CSE'21[<a class='cse21-slide'>slide</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota, "Tensor Core Device API Extension Library," IPSJ HPC workshop #176, 2020 [<a href='https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=203863&item_no=1&page_id=13&block_id=8'>link</a>]</li>
+        <li>Naoki Yoshifuji, <b>Hiroyuki Ootomo</b>, "Validation for Particle Method FLOSS," JSFM CRFD33, 2019 [<a href='https://proc-cpuinfo.fixstars.com/2019/12/cfd33/'>blog</a>]</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota, "TSQR on Tensor Cores," JSIAM anual meeting, 2019</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota, "TSQR on Tensor Cores," IPSJ HPC Workshop #170, 2019</li>
+        <li><b>Hiroyuki Ootomo</b>, Rio Yokota, "Batch QR on Tensor Cores," IPSJ Anual meeting, [Student Award]</li>
+        <li><b>Hiroyuki Ootomo</b>, Kazuki Owasa, Rio Yokota, "Deep Neural Nework Traning using Kronecker Factorizrion of Fisher Information Matrix," IPSJ Anual meeting #80, 2018</li>
+        <li><b>Hiroyuki Ootomo</b>, Kazuki Owasa, Rio Yokota, "Distributed Deep Neural Nework Traning using Kronecker Factorizrion of Fisher Information Matrix," IPSJ HPC Workshop #163, 2018</li>
       </ul>
       <h3>Other publications / presentations</h3>
       <ul class='ja'>
@@ -360,11 +381,13 @@
       </ul>
       <h3>Awards</h3>
       <ul class='ja'>
+        <li>Best Paper Award of HPC Asia 2023</li>
         <li>2022年度 山下記念研究賞 2022 - <a href='https://www.ipsj.or.jp/award/yamashita2022.html'>Webページ</a></li>
         <li>第3回 HAKKO熱の実験コンテスト 銀賞 「計算パーツの熱に関する実験」 2020 - <a href='https://x.momo86.net/?p=108'>ブログ</a></li>
         <li>情報処理学会全国大会 学生奨励賞 2019 - <a href='https://www.ipsj.or.jp/award/taikaigakusei.html#hdg4'>Webページ</a></li>
       </ul>
       <ul class='en'>
+        <li>Best Paper Award of HPC Asia 2023</li>
         <li>IPSJ Yamashita SIG Research Award 2022 - <a href='https://www.ipsj.or.jp/award/yamashita.html'>Web page (Japanese)</a></li>
         <li>2nd prize of heat experiment contest 2020 by HAKKO Corporation - <a href='https://x.momo86.net/?p=108'>Blog</a></li>
         <li>Student Encouragement Award of IPSJ National Convention 2019 - <a href='https://www.ipsj.or.jp/award/taikaigakusei.html#hdg4'>Webページ</a></li>
