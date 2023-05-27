@@ -301,6 +301,34 @@
         </div>
       </div>
       <div class='card'>
+        <h4>Quantum Circuit Simulation by SGEMM Emulation on Tensor Cores</h4>
+        <img src='/images/qc-tcec.png' style='width:100%;max-width:1000px;margin:auto;'>
+        <div class='ja'>
+          <div class='text-box'>
+            テンソルネットワーク縮約を用いた量子回路シミュレーションでは、テンソル縮約を行うTTGTアルゴリズムにより、その主たる計算は単精度行列積となる。
+            NVIDIA Tensorコアは混合精度行列積和演算回路であり、積を計算する行列は低精度（FP16、TF32）、内部計算と出力を単精度とする。
+            Tensorコアを単純に用い単精度行列積を計算する場合、入力行列を低精度へ変換することから、最終的な計算精度が劣化する。
+            この精度の劣化を補正する単精度行列積エミュレーションを手法では、TF32入力のTensorコアでは完全な単精度エミュレーションが可能であるのに対し、FP16入力のTensorコアを用いた場合ではサポートされる指数部範囲がFP16と同等に限定される。
+            一方でFP16 Tensorコアを用いることでTF32 Tensorコアを用いた場合より高い計算性能を得られ、ここにトレードオフが存在する。
+            本研究では、行列積において積を計算する行列の指数部分布を積計算の直前に解析し、これを用いてTensorコアの入力精度を切り替え、可能な範囲でFP16 Tensorコアを使用する手法を提案する。
+            詳しくは <a href='https://arxiv.org/abs/2303.08989'>論文</a> (ISC High Performance 2023) をご覧ください。
+          </div>
+        </div>
+        <div class='en'>
+          <div class='text-box'>
+            Single-precision complex matrix multiplication is the primary computation of quantum circuit simulation by tensor network contraction.
+            We improve the throughput of the simulation using SGEMM emulation on Tensor Cores.
+            There are two kinds of SGEMM emulation method implementation: TF32TCEC and FP16TCEC.
+            While TF32TCEC uses TF32 Tensor Cores and can be an alternative to SGEMM, the supported exponent range for input matrices is smaller than FP32 in FP16TCEC, which uses FP16 Tensor Cores.
+            However, TF32TCEC has higher throughput than FP16TCEC.
+            Therefore, there is a trade-off between the supported exponent range and throughput.
+            We propose an automatic precision selection to choose which Tensor Core to use.
+            This method checks the exponent distribution of the input matrices before computing a matrix multiplication.
+            See <a href='https://arxiv.org/abs/2303.08989'>our paper</a> (ISC High Performance 2023) for more detail.
+          </div>
+        </div>
+      </div>
+      <div class='card'>
         <h4>Custom 8-bit floating point value format for ANNS/IVFPQ on GPU</h4>
         <img src='/images/e5m3.png' style='width:100%;max-width:640px;margin:auto;'>
         <div class='ja'>
