@@ -183,6 +183,28 @@
       </div>
       <h3>Research</h3>
       <div class='card'>
+        <h4>DGEMM emulation on NVIDIA Int8 Tensor Cores via the Ozaki scheme</h4>
+        <img src='/images/dgemm-int8.png' style='width:100%;max-width:1000px;margin:auto;'>
+        <div class='ja'>
+          <div class='text-box'>
+            尾崎スキームは低精度演算器を用いた高精度行列積アルゴリズムです。
+            本手法は入力行列に対し、分割された行列間の積計算中で丸め誤差が発生しないよう分割を行うことで、高い計算精度を実現する。
+            これは固定小数点演算を介した計算と捉えることができ、Int8 Tensorコアによる演算と相性が良い。
+            本研究では、尾崎スキームをInt8 Tensorコアで実装することで、NVIDIA GeForce GPUにおいて倍精度の理論ピーク性能を上回る倍精度行列積を実現した。
+            詳しくは <a href='https://arxiv.org/abs/2306.11975'>論文</a> をご覧ください．
+          </div>
+        </div>
+        <div class='en'>
+          <div class='text-box'>
+            The Ozaki scheme is a high-precision matrix multiplication method that uses lower-precision arithmetic.
+            This scheme splits the input matrices so that the rounding error does not occur in the multiplication of the split matrices.
+            This can be interpreted as a fixed-point arithmetic method and is suitable for Int8 Tensor Cores.
+            We show that the scheme using Int8 Tensor Cores outperforms the theoretical peak performance of FP64 CUDA cores in double precision matrix multiplication on NVIDIA GeForce GPUs.
+            See <a href='https://arxiv.org/abs/2306.11975'>our paper</a> for more detail.
+          </div>
+        </div>
+      </div>
+      <div class='card'>
         <h4>SGEMM emulation on NVIDIA Tensor Cores with error correction method</h4>
         <img src='/images/tcec.png' style='width:100%;max-width:1000px;margin:auto;'>
         <div class='ja'>
