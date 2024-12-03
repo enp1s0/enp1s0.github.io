@@ -187,10 +187,10 @@
         <img src='/images/ozimma.svg' style='width:100%;max-width:1000px;margin:auto;'>
         <div class='ja'>
           <div class='text-box'>
-            尾崎スキームは低精度演算器を用いた高精度行列積アルゴリズムです。
-            本手法は入力行列に対し、分割された行列間の積計算中で丸め誤差が発生しないよう分割を行うことで、高い計算精度を実現する。
-            これは固定小数点演算を介した計算と捉えることができ、Int8 Tensorコアによる演算と相性が良い。
-            本研究では、尾崎スキームをInt8 Tensorコアで実装することで、NVIDIA GeForce GPUにおいて倍精度の理論ピーク性能を上回る倍精度行列積を実現した。
+            尾崎スキームは低精度演算器を用いた高精度行列積アルゴリズムです．
+            本手法は入力行列に対し，分割された行列間の積計算中で丸め誤差が発生しないよう分割を行うことで，高い計算精度を実現する．
+            これは固定小数点演算を介した計算と捉えることができ，Int8 Tensorコアによる演算と相性が良い．
+            本研究では，尾崎スキームをInt8 Tensorコアで実装することで，NVIDIA GeForce GPUにおいて倍精度の理論ピーク性能を上回る倍精度行列積を実現した．
             詳しくは <a href='https://arxiv.org/abs/2306.11975'>論文</a> をご覧ください．
           </div>
         </div>
@@ -229,13 +229,13 @@
         <img src='/images/qc-tcec.svg' style='width:100%;max-width:640px;margin:auto;'>
         <div class='ja'>
           <div class='text-box'>
-            テンソルネットワーク縮約を用いた量子回路シミュレーションでは、テンソル縮約を行うTTGTアルゴリズムにより、その主たる計算は単精度行列積となる。
-            NVIDIA Tensorコアは混合精度行列積和演算回路であり、積を計算する行列は低精度（FP16、TF32）、内部計算と出力を単精度とする。
-            Tensorコアを単純に用い単精度行列積を計算する場合、入力行列を低精度へ変換することから、最終的な計算精度が劣化する。
-            この精度の劣化を補正する単精度行列積エミュレーションを手法では、TF32入力のTensorコアでは完全な単精度エミュレーションが可能であるのに対し、FP16入力のTensorコアを用いた場合ではサポートされる指数部範囲がFP16と同等に限定される。
-            一方でFP16 Tensorコアを用いることでTF32 Tensorコアを用いた場合より高い計算性能を得られ、ここにトレードオフが存在する。
-            本研究では、行列積において積を計算する行列の指数部分布を積計算の直前に解析し、これを用いてTensorコアの入力精度を切り替え、可能な範囲でFP16 Tensorコアを使用する手法を提案する。
-            詳しくは <a href='https://arxiv.org/abs/2303.08989'>論文</a> (ISC High Performance 2023) をご覧ください。
+            テンソルネットワーク縮約を用いた量子回路シミュレーションでは，テンソル縮約を行うTTGTアルゴリズムにより，その主たる計算は単精度行列積となる．
+            NVIDIA Tensorコアは混合精度行列積和演算回路であり，積を計算する行列は低精度（FP16，TF32），内部計算と出力を単精度とする．
+            Tensorコアを単純に用い単精度行列積を計算する場合，入力行列を低精度へ変換することから，最終的な計算精度が劣化する．
+            この精度の劣化を補正する単精度行列積エミュレーションを手法では，TF32入力のTensorコアでは完全な単精度エミュレーションが可能であるのに対し，FP16入力のTensorコアを用いた場合ではサポートされる指数部範囲がFP16と同等に限定される．
+            一方でFP16 Tensorコアを用いることでTF32 Tensorコアを用いた場合より高い計算性能を得られ，ここにトレードオフが存在する．
+            本研究では，行列積において積を計算する行列の指数部分布を積計算の直前に解析し，これを用いてTensorコアの入力精度を切り替え，可能な範囲でFP16 Tensorコアを使用する手法を提案する．
+            詳しくは <a href='https://arxiv.org/abs/2303.08989'>論文</a> (ISC High Performance 2023) をご覧ください．
           </div>
         </div>
         <div class='en'>
@@ -257,10 +257,10 @@
         <img src='/images/e5m3.png' style='width:100%;max-width:640px;margin:auto;'>
         <div class='ja'>
           <div class='text-box'>
-            近似最近傍探索（ANNS; Approximate Nearest Neighbor Search）のアルゴリズムの一つであるIVFPQをGPU用に実装する場合、Sharedメモリに対するランダムアクセスによりバンクコンフリクトが発生し、性能が低下する可能性がある。
-            バンクコンフリクトを緩和する方法として低bit長変数の使用が挙げられ、GPU上で値の保持だけに用いる低変換コストな8-bit浮動小数点数の設計を行います。
-            IVFPQの性質上値は常に0以上であるため符号部は不必要であるなど、アプリケーションの性質に合わせたものとなっており、IVFPQにおいて多少の性能劣化を許容すれば計算性能を向上させることが確認されています。
-            詳しくは<a class='sc22-poster'>ポスター</a>をご覧ください。
+            近似最近傍探索（ANNS; Approximate Nearest Neighbor Search）のアルゴリズムの一つであるIVFPQをGPU用に実装する場合，Sharedメモリに対するランダムアクセスによりバンクコンフリクトが発生し，性能が低下する可能性がある．
+            バンクコンフリクトを緩和する方法として低bit長変数の使用が挙げられ，GPU上で値の保持だけに用いる低変換コストな8-bit浮動小数点数の設計を行います．
+            IVFPQの性質上値は常に0以上であるため符号部は不必要であるなど，アプリケーションの性質に合わせたものとなっており，IVFPQにおいて多少の性能劣化を許容すれば計算性能を向上させることが確認されています．
+            詳しくは<a class='sc22-poster'>ポスター</a>をご覧ください．
           </div>
         </div>
         <div class='en'>
@@ -365,7 +365,7 @@
             </div>
             <div class='ja'>
               <div class='text-box'>
-                8枚のNVIDIA K20xの排熱を利用して熱燗を作るための計算機クラスタを作成しました。
+                8枚のNVIDIA K20xの排熱を利用して熱燗を作るための計算機クラスタを作成しました．
                 [<a href='https://enp1s0.github.io/blog/etc/2020/01/22/atsukan-v2.html'>Blog (Japanese)</a>}
               </div>
             </div>
@@ -382,7 +382,7 @@
             </div>
             <div class='ja'>
               <div class='text-box'>
-                秘密鍵を印刷した紙を大学内に置きました。
+                秘密鍵を印刷した紙を大学内に置きました．
                 [<a href='https://enp1s0.dev/priv.html'>詳細</a>]
               </div>
             </div>
@@ -398,7 +398,7 @@
             </div>
             <div class='ja'>
               <div class='text-box'>
-                Tensorコアを効率的に用いるための拡張ライブラリ。<br>
+                Tensorコアを効率的に用いるための拡張ライブラリ．<br>
                 <a href='https://github.com/wmmae/wmma_extension'>wmma-extension</a> - GitHub
               </div>
             </div>
@@ -414,7 +414,7 @@
             </div>
             <div class='ja'>
               <div class='text-box'>
-                自宅の庭を掘って粘土を取り出し縄文式土器を焼いています。
+                自宅の庭を掘って粘土を取り出し縄文式土器を焼いています．
                 <a href='https://enp1s0.github.io/blog/etc/2020/08/07/pottery.html'>Blog (Japanese)</a>
               </div>
             </div>
@@ -432,7 +432,7 @@
             </div>
             <div class='ja'>
               <div class='text-box'>
-                試行錯誤しながら家にピザ窯を作っています。<br>
+                試行錯誤しながら家にピザ窯を作っています．<br>
                 <!--a href='https://x.momo86.net/?p=63'>Blog (Japanese)</a-->
               </div>
             </div>
@@ -448,7 +448,7 @@
             </div>
             <div class='ja'>
               <div class='text-box'>
-                廃PC部品を再利用してペンダントなどのアクセサリを作成しています。<br>
+                廃PC部品を再利用してペンダントなどのアクセサリを作成しています．<br>
                 <a href='https://atelier.momo86.net'>Web page (Japanese)</a>
               </div>
             </div>
@@ -464,7 +464,7 @@
             </div>
             <div class='ja'>
               <div class='text-box'>
-                全結合ニューラルネットワークの画像をさくっと作れるWebサイト。</br>
+                全結合ニューラルネットワークの画像をさくっと作れるWebサイト．</br>
                 <a href='https://nn-image.momo86.net'>nn-image</a>
               </div>
             </div>
@@ -480,7 +480,7 @@
             </div>
             <div class='ja'>
               <div class='text-box'>
-                <a href='https://github.com/cocopon/iceberg.vim'>iceberg</a>っぽい画像を作成するWebサイト。<br>
+                <a href='https://github.com/cocopon/iceberg.vim'>iceberg</a>っぽい画像を作成するWebサイト．<br>
                 <a href='https://iceberg-gen.momo86.net/'>iceberg-gen</a>
               </div>
             </div>
@@ -497,7 +497,7 @@
             </div>
             <div class='ja'>
               <div class='text-box'>
-                CUDA関係のオレオレ拡張ライブラリ。
+                CUDA関係のオレオレ拡張ライブラリ．
                 <a href='https://github.com/enp1s0/cutf'>cutf</a> - GitHub
               </div>
             </div>
@@ -513,7 +513,7 @@
             </div>
             <div class='ja'>
               <div class='text-box'>
-                tmuxのセッションを利用したジョブキュー。<br>
+                tmuxのセッションを利用したジョブキュー．<br>
                 <a href='https://github.com/enp1s0/vico'>vico</a> - GitHub
               </div>
             </div>
