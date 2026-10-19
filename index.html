@@ -3,181 +3,35 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ajusa/lit@latest/dist/lit.css" />
     <link rel="stylesheet" href="./css/default.css">
     <title>大友 広幸 / Ootomo, Hiroyuki</title>
-    <style>
-  body {
-    background-color: #fff;
-    color: #222;
-    font-family: 'Noto Sans JP', 'Helvetica Neue', Arial, sans-serif;
-    margin: 2rem auto;
-    max-width: 1500px;
-    line-height: 1.6;
-  }
-
-  h1, h2, h3 {
-    font-weight: 300;
-    color: #111;
-    letter-spacing: 0.5px;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-  }
-
-  h3 {
-    border-left: 12px solid #5a3c25;
-    padding-left: 0.6rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  a {
-    color: #3b7a3f;
-    text-decoration: none;
-    position: relative;
-    transition: color 0.25s ease, text-shadow 0.25s ease;
-  }
-
-  a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(to right, #a07b50, #704c2a);
-    opacity: 0.4;
-    transition: opacity 0.25s ease, transform 0.25s ease;
-    transform-origin: left;
-    transform: scaleX(0.6);
-  }
-
-  a:hover {
-    color: #4ea34f;
-    text-shadow: 0 0 2px rgba(120, 80, 50, 0.3);
-  }
-
-  a:hover::after {
-    opacity: 0.8;
-    transform: scaleX(1);
-  }
-
-  .text-box {
-    margin-top: 5px;
-  }
-
-  .lite-hr {
-    border: none;
-    height: 1px;
-    background: #b0b0b0;
-    margin: 1.5rem 0;
-  }
-
-  .text-right {
-    text-align: right;
-  }
-
-  .ja {
-    display: none;
-  }
-
-  .github-icon {
-    width: 30px;
-    content: url('https://api.iconify.design/fe/github-alt.svg');
-  }
-  .linkedin-icon {
-    width: 30px;
-    content: url('https://api.iconify.design/mdi/linkedin.svg');
-  }
-  .twitter-icon {
-    width: 30px;
-    content: url('https://api.iconify.design/mdi/twitter.svg');
-  }
-  .google-scholar-icon {
-    width: 30px;
-    content: url('https://api.iconify.design/academicons/google-scholar.svg');
-  }
-  .green-color {
-    color: #76b900;
-  }
-
-  .green-color {
-    color: #7da27d;
-  }
-
-  ul {
-    list-style-type: none;
-  }
-
-  ul > li::before {
-    content: "– ";
-    color: #b0b0b0;
-  }
-
-  button.btn {
-    border: 1px solid #744b2f;
-    background: transparent;
-  }
-
-  button.btn:hover {
-    background: #eee;
-    color: #000;
-  }
-
-  hr {
-    border: none;
-    height: 3px;
-    width: 100%;
-    background: #744b2f;
-    border-radius: 2px;
-    opacity: 0.85;
-    margin: 2em 0;
-  }
-  .card {
-    border: 2px solid #744b2f;
-  }
-    </style>
   </head>
   <body>
-    <div id='contents'>
-      <div class='row' id='header'>
+    <div class="language-controls">
+      <button class="btn" id="language-toggle" type="button" hidden>日本語</button>
+    </div>
+    <main id='contents' tabindex='-1'>
+      <header class='row' id='header'>
         <div class='10 col'>
           <h1><span class='ja'>大友 広幸 / Ootomo, Hiroyuki</span><span class='en'>Hiroyuki Ootomo</span></h1>
         </div>
         <div class='2 col'>
           <img id='profile-image'>
         </div>
+      </header>
+      <div class='social-links'>
+        <a href='https://github.com/enp1s0' aria-label='GitHub'><span class='github-icon' aria-hidden='true'></span></a>
+        <a href='https://www.linkedin.com/in/hiroyuki-ootomo-830941b2/' aria-label='LinkedIn'><span class='linkedin-icon' aria-hidden='true'></span></a>
+        <a href='https://twitter.com/tensorcore' aria-label='Twitter'><span class='twitter-icon' aria-hidden='true'></span></a>
+        <a href='https://scholar.google.co.jp/citations?user=V-RuwdMAAAAJ' aria-label='Google Scholar'><span class='google-scholar-icon' aria-hidden='true'></span></a>
       </div>
-      <hr>
-      <div class='text-right'>
-        <div class='ja'>
-          <button class="btn" onclick="to_en()">English</button>
-        </div>
-        <div class='en'>
-          <button class="btn" onclick="to_ja()">日本語</button>
-        </div>
-      </div>
-      <div class='row'>
-        <a href='https://github.com/enp1s0'><span class='github-icon'></span></a>
-        <a href='https://www.linkedin.com/in/hiroyuki-ootomo-830941b2/'><span class='linkedin-icon'></span></a>
-        <a href='https://twitter.com/tensorcore'><span class='twitter-icon'></span></a>
-        <a href='https://scholar.google.co.jp/citations?user=V-RuwdMAAAAJ'><span class='google-scholar-icon'></span></a>
-      </div>
-      <div class='row'>
-        <ul>
-          <li>
-            Software / Compute Performance Engineer
-          </li>
-          <li>
-            Ph.D. in Computer science from Tokyo Institute of Technology
-          </li>
+      <div class='intro'>
+        <p class='role'>Software / Compute Performance Engineer</p>
+        <p>Ph.D. in Computer science from Tokyo Institute of Technology</p>
       </div>
       <div class='row'>
         <div class='6 col'>
-          <h3>Research</h3>
+          <h2 id='interests'>Research</h2>
           <ul>
             <li><span class='ja'>高性能計算</span><span class='en'>High performance computing</span>
               <ul>
@@ -191,7 +45,7 @@
           </ul>
         </div>
         <div class='6 col'>
-          <h3>Skills / Hobbies</h3>
+          <h2>Skills / Hobbies</h2>
           <ul>
             <li>Vim</li>
             <li>C,C++ / CUDA</li>
@@ -215,7 +69,7 @@
           </ul>
         </div>
       </div>
-      <h3>Work experience</h3>
+      <h2 id='experience'>Work experience</h2>
       <div class='row'>
         <div class='7 col'>
           <ul>
@@ -248,7 +102,7 @@
               <u><span class='ja'>発表</span><span class='en'>Presentation</span></u>
               <ul>
                 <li><b>Hiroyuki Ootomo</b>, Akira Naruse "Custom 8-bit Floating Point Value Format for Reducing Shared Memory Bank Conflict in Approximate Nearest Neighbor Search", SC22 Research Poster, 2022 [<a href='https://arxiv.org/abs/2301.06672'>abstract</a>][<a class='sc22-poster'>poster</a>]</li>
-                <li>The implementation is included in NVIDIA <a href='https://github.com/rapidsai/raft'>raft</a>.
+                <li>The implementation is included in NVIDIA <a href='https://github.com/rapidsai/raft'>raft</a>.</li>
               </ul>
             </li>
             <li>2021.03 - 2022.02<br>
@@ -286,13 +140,13 @@
         </div>
         <div class='5 col'>
           Graph: <br>
-          <img src='images/my_history.svg' style='width:100%;'>
+          <img loading="lazy" decoding="async" alt="Career timeline" src='images/my_history.svg' style='width:100%;'>
         </div>
       </div>
-      <h3>Research</h3>
+      <h2 id='research'>Research</h2>
       <div class='card'>
-        <h4>DGEMM emulation on NVIDIA Int8 Tensor Cores via the Ozaki scheme</h4>
-        <img src='/images/ozimma.svg' style='width:100%;max-width:1000px;margin:auto;'>
+        <h3>DGEMM emulation on NVIDIA Int8 Tensor Cores via the Ozaki scheme</h3>
+        <img loading="lazy" decoding="async" alt="Ozaki scheme matrix multiplication diagram" src='images/ozimma.svg' style='width:100%;max-width:1000px;margin:auto;'>
         <div class='ja'>
           <div class='text-box'>
             尾崎スキームは低精度演算器を用いた高精度行列積アルゴリズムです．
@@ -313,8 +167,8 @@
         </div>
       </div>
       <div class='card'>
-        <h4>SGEMM emulation on NVIDIA Tensor Cores with error correction method</h4>
-        <img src='/images/tcec.png' style='width:100%;max-width:1000px;margin:auto;'>
+        <h3>SGEMM emulation on NVIDIA Tensor Cores with error correction method</h3>
+        <img loading="lazy" decoding="async" alt="Tensor Core error correction method" src='images/tcec.png' style='width:100%;max-width:1000px;margin:auto;'>
         <div class='ja'>
           <div class='text-box'>
             TensorコアはNVIDIA GPU上に搭載された混合精度行列積和演算回路です．
@@ -333,8 +187,8 @@
         </div>
       </div>
       <div class='card'>
-        <h4>Quantum Circuit Simulation by SGEMM Emulation on Tensor Cores</h4>
-        <img src='/images/qc-tcec.svg' style='width:100%;max-width:640px;margin:auto;'>
+        <h3>Quantum Circuit Simulation by SGEMM Emulation on Tensor Cores</h3>
+        <img loading="lazy" decoding="async" alt="Quantum circuit simulation results" src='images/qc-tcec.svg' style='width:100%;max-width:640px;margin:auto;'>
         <div class='ja'>
           <div class='text-box'>
             テンソルネットワーク縮約を用いた量子回路シミュレーションでは，テンソル縮約を行うTTGTアルゴリズムにより，その主たる計算は単精度行列積となる．
@@ -361,8 +215,8 @@
         </div>
       </div>
       <div class='card'>
-        <h4>Custom 8-bit floating point value format for ANNS/IVFPQ on GPU</h4>
-        <img src='/images/e5m3.png' style='width:100%;max-width:640px;margin:auto;'>
+        <h3>Custom 8-bit floating point value format for ANNS/IVFPQ on GPU</h3>
+        <img loading="lazy" decoding="async" alt="Custom 8-bit floating point format" src='images/e5m3.png' style='width:100%;max-width:640px;margin:auto;'>
         <div class='ja'>
           <div class='text-box'>
             近似最近傍探索（ANNS; Approximate Nearest Neighbor Search）のアルゴリズムの一つであるIVFPQをGPU用に実装する場合，Sharedメモリに対するランダムアクセスによりバンクコンフリクトが発生し，性能が低下する可能性がある．
@@ -382,7 +236,7 @@
           </div>
         </div>
       </div>
-      <h3>Publications (Peer-reviewed)</h3>
+      <h2 id='publications'>Publications (Peer-reviewed)</h2>
       <ol>
         <li><b>Hiroyuki Ootomo</b>, Katsuhisa Ozaki and Rio Yokota, "DGEMM on Integer Matrix Multiplication Unit", IJHPCA, 2024 [<a href='https://journals.sagepub.com/doi/10.1177/10943420241239588'>journal</a>][<a href="https://arxiv.org/abs/2306.11975">preprint</a>]</li>
         <li><b>Hiroyuki Ootomo</b>, Akira Naruse, Corey Nolet, Ray Wang, Tamas Feher, Yong Wang, "CAGRA: Highly Parallel Graph Construction and Approximate Nearest Neighbor Search for GPUs", ICDE 2024, [<a href="https://ieeexplore.ieee.org/abstract/document/10597683">paper</a>][<a href="https://arxiv.org/abs/2308.15136">preprint</a>]</li>
@@ -395,7 +249,7 @@
         <li><b>Hiroyuki Ootomo</b>, Rio Yokota, "Randomized SVD on TensorCores", ISC 2020 Research Poster [<a href='https://2020.isc-program.com/presentation/?id=post115&sess=sess325'>link</a>]</li>
         <li><b>Hiroyuki Ootomo</b>, Rio Yokota, "TSQR on Tensor Cores", SC19 Research Poster, 2019 [Best Poster Candidate] [<a class='sc19-poster'>poster</a>][<a id='sc19-slides'>slides</a>]</li>
       </ol>
-      <h3>Publications & Presentations (Non peer-reviewed)</h3>
+      <h2>Publications & Presentations (Non peer-reviewed)</h2>
       <ol class='ja'>
         <li><b>Hiroyuki Ootomo</b>, "What GPU Engineer Think About When Designing Graph-based ANNS (GPU-oriented High-Performance Graph-based Approximate Nearest Neighbor Search)," The 1st Workshop on Vector Databases (VecDB), 2025 [<a href="https://vecdb-ws.github.io/icml2025/index.html">link</a>]</li>
         <li><b>Hiroyuki Ootomo</b>, "DGEMM on Integer Tensor Cores," NHR PerfLab Seminar, 2023 [<a class='nhr-dgemm-int8'>slides</a>]</li>
@@ -436,7 +290,7 @@
         <li><b>Hiroyuki Ootomo</b>, Kazuki Owasa, Rio Yokota, "Deep Neural Network Training using Kronecker Factorizrion of Fisher Information Matrix," IPSJ Annual meeting #80, 2018</li>
         <li><b>Hiroyuki Ootomo</b>, Kazuki Owasa, Rio Yokota, "Distributed Deep Neural Network Training using Kronecker Factorizrion of Fisher Information Matrix," IPSJ HPC Workshop #163, 2018</li>
       </ol>
-      <h3>Other publications / presentations</h3>
+      <h2>Other publications / presentations</h2>
       <ol class='ja'>
         <li>2022.06 「"Near-Optimal" Designes (前半)」 <a href='https://fixstars-engineers.connpass.com/event/235792/'>高性能プロセッサー設計の専門書 輪読会 #04</a></li>
         <li>2019.06 「DualSPHysicsで静水圧問題」 <a href='https://opencae-kanto.connpass.com/event/130544/'>第76回オープンCAE勉強会＠関東（流体など）【大崎】</a> - [<a href='https://proc-cpuinfo.fixstars.com/2019/06/dualsphysics/'>発表後記</a>]</li>
@@ -447,7 +301,7 @@
         <li>2019.06 "Hydrostatic pressure problem on DualSPHysics" <a href='https://opencae-kanto.connpass.com/event/130544/'>76th Open CAE study group, Kanto area</a> - [<a href='https://proc-cpuinfo.fixstars.com/2019/06/dualsphysics/'>Fixsraes tech blog</a>]</li>
         <li>2019.04 "Introduction to vim" <a href='https://rioyokotalab.github.io/vimvimvim/'>#061_vimvimvim</a> - [<a class='vimvimvim-0'>slides</a>]</li>
       </ol>
-      <h3>Awards</h3>
+      <h2>Awards</h2>
       <ul class='ja'>
         <li>2024年度 手島精一記念研究賞（博士論文賞）</li>
         <li>Best Paper Award of HPC Asia 2023</li>
@@ -462,12 +316,12 @@
         <li>2nd prize of heat experiment contest 2020 by HAKKO Corporation - <a href='https://www.hakko.co.jp/contest/result_n032.php'>Detail</a> (Japanese)</li>
         <li>Student Encouragement Award of IPSJ National Convention 2019 - <a href='https://www.ipsj.or.jp/award/taikaigakusei.html#hdg4'>Webページ</a></li>
       </ul>
-      <h3>Projects</h3>
+      <h2 id='projects'>Projects</h2>
       <div class='row'>
         <div class='7 col'>
           <div class='card'>
-            <h4>High performance ATSUKAN Computing</h4>
-            <img src='/images/atsukan.jpg' style='width: 100%;'>
+            <h3>High performance ATSUKAN Computing</h3>
+            <img loading="lazy" decoding="async" alt="GPU cluster with liquid cooling for heating sake" src='images/atsukan.jpg' style='width: 100%;'>
             <div class='en'>
               <div class='text-box'>
                 I built a GPU cluster to make hot sake (atsukan;熱燗).
@@ -478,18 +332,18 @@
             <div class='ja'>
               <div class='text-box'>
                 8枚のNVIDIA K20xの排熱を利用して熱燗を作るための計算機クラスタを作成しました．
-                [<a href='https://enp1s0.github.io/blog/etc/2020/01/22/atsukan-v2.html'>Blog (Japanese)</a>}
+                [<a href='https://enp1s0.github.io/blog/etc/2020/01/22/atsukan-v2.html'>Blog (Japanese)</a>]
               </div>
             </div>
           </div>
           <div class='card'>
-            <h4>What can a thief steal?</h4>
-            <img src='/images/private-key.jpg' style='width: 100%;'>
+            <h3>What can a thief steal?</h3>
+            <img loading="lazy" decoding="async" alt="Printed private key art project" src='images/private-key.jpg' style='width: 100%;'>
             <div class='en'>
               <div class='text-box'>
                 I put a private key printed on a paper at the university.
                 How much time and interest can <b>I</b> steal from people?
-                [<a href='https://enp1s0.dev/priv.html'>detail (Japanese)</a>}
+                [<a href='https://enp1s0.dev/priv.html'>detail (Japanese)</a>]
               </div>
             </div>
             <div class='ja'>
@@ -500,8 +354,8 @@
             </div>
           </div>
           <div class='card'>
-            <h4>WMMA API extension</h4>
-            <img src='/images/wmmae.png' style='width: 100%;'>
+            <h3>WMMA API extension</h3>
+            <img loading="lazy" decoding="async" alt="WMMA API extension diagram" src='images/wmmae.png' style='width: 100%;'>
             <div class='en'>
               <div class='text-box'>
                 An extension library for WMMA API (TensorCore API). <br>
@@ -516,8 +370,8 @@
             </div>
           </div>
           <div class='card'>
-            <h4><span class='en'>Baking Jomon pottery</span><span class='ja'>縄文土器</span></h4>
-            <img src='/images/doki.jpg' style='width: 100%;'>
+            <h3><span class='en'>Baking Jomon pottery</span><span class='ja'>縄文土器</span></h3>
+            <img loading="lazy" decoding="async" alt="Handmade Jomon pottery" src='images/doki.jpg' style='width: 100%;'>
             <div class='en'>
               <div class='text-box'>
                 I get clay from the ground and bake Jomon pottery(縄文土器).
@@ -534,8 +388,8 @@
         </div>
         <div class='5 col'>
           <div class='card'>
-            <h4><span class='en'>Pizza oven</span><span class='ja'>ピザ窯づくり</span></h4>
-            <img src='/images/pizza.jpg' style='width: 100%;'>
+            <h3><span class='en'>Pizza oven</span><span class='ja'>ピザ窯づくり</span></h3>
+            <img loading="lazy" decoding="async" alt="Homemade pizza oven" src='images/pizza.jpg' style='width: 100%;'>
             <div class='en'>
               <div class='text-box'>
                 built a pizza oven in my house.<br>
@@ -550,8 +404,8 @@
             </div>
           </div>
           <div class='card'>
-            <h4><span class='en'>Computer parts accessories</span><span class='ja'>廃PC部品アクセサリ</span></h4>
-            <img src='/images/accessory.jpg' style='width: 100%;'>
+            <h3><span class='en'>Computer parts accessories</span><span class='ja'>廃PC部品アクセサリ</span></h3>
+            <img loading="lazy" decoding="async" alt="Accessories made from computer parts" src='images/accessory.jpg' style='width: 100%;'>
             <div class='en'>
               <div class='text-box'>
                 accessories from old/broken computer parts.
@@ -565,24 +419,24 @@
             </div>
           </div>
           <div class='card'>
-            <h4>NN-Image</h4>
-            <img src='/images/nn-image.svg' style='width: 100%;'>
+            <h3>NN-Image</h3>
+            <img loading="lazy" decoding="async" alt="Fully connected neural network diagram" src='images/nn-image.svg' style='width: 100%;'>
             <div class='en'>
               <div class='text-box'>
-                A web service which generates undirected fully-connected graph.</br>
+                A web service which generates undirected fully-connected graph.<br>
                 <a href='https://nn-image.momo86.net'>nn-image</a>
               </div>
             </div>
             <div class='ja'>
               <div class='text-box'>
-                全結合ニューラルネットワークの画像をさくっと作れるWebサイト．</br>
+                全結合ニューラルネットワークの画像をさくっと作れるWebサイト．<br>
                 <a href='https://nn-image.momo86.net'>nn-image</a>
               </div>
             </div>
           </div>
           <div class='card'>
-            <h4>Iceberg wallpaper generator</h4>
-            <img src='/images/iceberg-wallpaper.png' style='width: 100%;'>
+            <h3>Iceberg wallpaper generator</h3>
+            <img loading="lazy" decoding="async" alt="Iceberg style wallpaper" src='images/iceberg-wallpaper.png' style='width: 100%;'>
             <div class='en'>
               <div class='text-box'>
                 A web service which generates <a href='https://github.com/cocopon/iceberg.vim'>iceberg</a>-style wallpaper.<br>
@@ -597,8 +451,8 @@
             </div>
           </div>
           <div class='card'>
-            <h4>cutf</h4>
-            <img src='/images/cutf.png' style='width: 50%;'>
+            <h3>cutf</h3>
+            <img loading="lazy" decoding="async" alt="CUDA template wrapper library" src='images/cutf.png' style='width: 50%;'>
             <div class='en'>
               <div class='text-box'>
                 A tiny CUDA template wrapper for myself.
@@ -614,8 +468,8 @@
             </div>
           </div>
           <div class='card'>
-            <h4>vico - a tiny job queue</h4>
-            <img src='/images/vico.svg' style='width: 100%;'>
+            <h3>vico - a tiny job queue</h3>
+            <img loading="lazy" decoding="async" alt="Vico job queue diagram" src='images/vico.svg' style='width: 100%;'>
             <div class='en'>
               <div class='text-box'>
                 An tiny job queue (scheduler) using tmux. <br>
@@ -633,7 +487,7 @@
       </div>
       <div class='row'>
         <div class='6 col'>
-          <h4>TA/RA</h4>
+          <h2>TA/RA</h2>
           <ul class='ja'>
             <li>2017.04 - 2023.03<br>
               横田理央研究室 RA
@@ -653,8 +507,9 @@
             <li>2021.01 - 2021.03<br>
               Technical staff at National Institute of Advanced Industrial Science and Technology (AIST)</li>
           </ul>
+        </div>
         <div class='6 col'>
-          <h3>Educational background</h3>
+          <h2>Educational background</h2>
           <ul>
             <li>2020.04 - 2023.09<br>
               <span class='ja'>東京工業大学情報理工学院情報工学系（博士課程） 横田理央研究室 [<a class='d-ron'>博士論文</a>][<a class='phd-pub-slides'>公聴会スライド</a>]</span><span class='en'>School of computing, TokyoTech (Ph.D). Supervisor: Dr. Rio Yokota [<a class='d-ron'>dissertation</a>][<a class='phd-pub-slides'>defense slides</a> (Japanese)]</span>
@@ -671,25 +526,24 @@
           </ul>
         </div>
       </div>
-      <div class='row'>
-        <h3>Links</h3>
+      <div class='contact-section'>
+        <h2>Links</h2>
         <ul>
           <li><a href='https://github.com/enp1s0/'>GitHub</a></li>
           <li><a href='https://twitter.com/tensorcore'>Twitter (@tensorcore)</a></li>
           <li><a href='https://enp1s0.dev/'>etc</a> - enp1s0.dev</li>
         </ul>
-        <h3>Contact</h3>
+        <h2 id='contact'>Contact</h2>
         <ul>
           <li>Mail : &#111;&#111;&#116;&#111;&#109;&#111;&#46;&#104;&#46;&#120;&#56;&#54;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</li>
         </ul>
         <hr>
-        <div id='footer'>
+        <footer id='footer'>
           &copy; 2024 Ootomo Hiroyuki
-        </div>
+        </footer>
       </div>
-    </div>
-  </body>
-  <script>
+    </main>
+    <script>
     function set_class_href(name, link) {
       var elements = document.getElementsByClassName(name);
       for (var i = 0; i < elements.length; i++) {
@@ -710,33 +564,26 @@
     set_class_href('d-ron', 'https://static.momo86.net/f/1/d-ron?ref=' + document.referrer);
     set_class_href('phd-pub-slides', 'https://static.momo86.net/f/1/phd-pub?ref=' + document.referrer);
   </script>
-  <script>
-    function set_display(c, p) {
-      var arrayOfElements=document.getElementsByClassName(c);
-      var lengthOfArray=arrayOfElements.length;
-      for (var i=0; i<lengthOfArray;i++){
-        arrayOfElements[i].style.display=p;
+    <script>
+      const languageToggle = document.getElementById('language-toggle');
+      function setLanguage(language) {
+        document.documentElement.lang = language;
+        languageToggle.textContent = language === 'ja' ? 'English' : '日本語';
+        languageToggle.lang = language === 'ja' ? 'en' : 'ja';
+        languageToggle.setAttribute('aria-label', language === 'ja' ? 'Switch to English' : '日本語に切り替え');
       }
-    }
-    function to_ja() {
-      set_display('ja', 'inline');
-      set_display('en', 'none');
-    }
-    function to_en() {
-      set_display('ja', 'none');
-      set_display('en', 'inline');
-    }
-    function init_lang() {
-      const language = (window.navigator.languages && window.navigator.languages[0]) ||
-          window.navigator.language ||
-          window.navigator.userLanguage ||
-          window.navigator.browserLanguage;
-      if (language == 'ja' || language == 'ja-JP') {
-        to_ja();
-      }
-    }
-    window.onload = function(){
-      init_lang();
-    }
-  </script>
+      let language = (navigator.language || 'en').toLowerCase().startsWith('ja') ? 'ja' : 'en';
+      try {
+        const saved = localStorage.getItem('preferred-language');
+        if (saved === 'ja' || saved === 'en') language = saved;
+      } catch (_) { /* Language switching also works when storage is unavailable. */ }
+      setLanguage(language);
+      languageToggle.hidden = false;
+      languageToggle.addEventListener('click', () => {
+        const next = document.documentElement.lang === 'ja' ? 'en' : 'ja';
+        setLanguage(next);
+        try { localStorage.setItem('preferred-language', next); } catch (_) {}
+      });
+    </script>
+  </body>
 </html>
